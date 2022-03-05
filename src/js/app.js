@@ -17,14 +17,14 @@ const menuToggle = () => {
 
 headerButton.onclick = menuToggle;
 
-window.onclick = (e) => {
-  if (
-    menuOpened &&
-    !e.composedPath().includes(headerButton) &&
-    !e.composedPath().includes(headerMenu)
-  )
-    menuToggle();
-};
+window.addEventListener('click', e => {
+    if (
+      menuOpened &&
+      !e.composedPath().includes(headerButton) &&
+      !e.composedPath().includes(headerMenu)
+    )
+      menuToggle();
+})
 
 document.querySelectorAll('.search').forEach(el => {
     // variables
@@ -84,8 +84,8 @@ document.querySelectorAll('.search').forEach(el => {
     })
 
     // search disappears
-    window.addEventListener('click', e => {
-        if(content.classList.contains('active')){
+    document.addEventListener('click', e => {
+        if(list.classList.contains('active')){
             if(!e.composedPath().includes(el)){
                 list.classList.remove('active');
                 content.classList.remove('active');

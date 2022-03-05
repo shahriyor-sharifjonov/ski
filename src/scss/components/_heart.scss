@@ -2,6 +2,9 @@
     .heart{
         svg{
             fill: #fff;
+            @include media(992){
+                fill: var(--primary);
+            }
         }
     }
 }
