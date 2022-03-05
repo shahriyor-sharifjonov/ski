@@ -1,1 +1,47 @@
 // Выпадашка
+.dropdown {
+  max-width: 343px;
+  position: relative;
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    &_active{
+      svg{
+        transform: rotate(-180deg);
+      }
+    }
+    svg{
+      transition: 200ms ease;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 200ms ease;
+    &_visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    &-item {
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      transition: 200ms ease;
+    }
+  }
+  &__input {
+    &_hidden {
+      display: none;
+    }
+  }
+}

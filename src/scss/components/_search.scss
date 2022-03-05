@@ -24,13 +24,17 @@
             background: transparent;
             flex: 1 1 auto;
             padding: 0 16px;
+            font-size: 16px;
+            line-height: 120%;
+            color: #374151;
+            width: 100%;
         }
         &.active{
             opacity: 1;
             visibility: visible;
         }
     }
-    .search__toggle{
+    &__toggle{
         svg{
             fill: var(--primary);
         }

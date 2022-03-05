@@ -4,54 +4,65 @@ mixin header-home()
             .container.header__inner 
                 a(href="index.html").header__logo
                     img(src="@img/logo-white.svg", alt="" draggable="false")
-                .search.header__search 
-                    form(action="").search__content 
-                        input(type="text" placeholder="Поиск по названию")
-                        button(type="submit").search__button 
+                .header__content
+                    .search.header__search 
+                        form(action="").search__content 
+                            input(type="text" placeholder="Поиск по названию")
+                            button(type="submit").search__button 
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z" fill="#2563EB")
+                            .search__list
+                                ul(role="listbox").search__list-content
+                                    li(role="presentation").search__list-item.active 
+                                        span.search__list-name Абзаково
+                                        span.search__list-distance 8 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Авальман
+                                        span.search__list-distance 18 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Аджигардак
+                                        span.search__list-distance 5 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Ак-Йорт
+                                        span.search__list-distance 8 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Алпатьево
+                                        span.search__list-distance 8 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Альбатрос
+                                        span.search__list-distance 18 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Армхи
+                                        span.search__list-distance 5 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Арсгора
+                                        span.search__list-distance 8 трасс (всего 52 км)
+                                    li(role="presentation").search__list-item 
+                                        span.search__list-name Архыз
+                                        span.search__list-distance 12 трасс (всего 30 км)
+                        button(type="button").search__toggle 
                             svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                path(fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z" fill="#2563EB")
-                        .search__list
-                            ul(role="listbox").search__list-content
-                                li(role="presentation").search__list-item.active 
-                                    span.search__list-name Абзаково
-                                    span.search__list-distance 8 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Авальман
-                                    span.search__list-distance 18 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Аджигардак
-                                    span.search__list-distance 5 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Ак-Йорт
-                                    span.search__list-distance 8 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Алпатьево
-                                    span.search__list-distance 8 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Альбатрос
-                                    span.search__list-distance 18 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Армхи
-                                    span.search__list-distance 5 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Арсгора
-                                    span.search__list-distance 8 трасс (всего 52 км)
-                                li(role="presentation").search__list-item 
-                                    span.search__list-name Архыз
-                                    span.search__list-distance 12 трасс (всего 30 км)
-                    button(type="button").search__toggle 
-                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            path(fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z")
-                ul.header__list
-                    li.header__li 
-                        a(href="#!").header__link курорты 
-                    li.header__li 
-                        a(href="#!").header__link статьи 
-                    li.header__li 
-                        a(href="#!").header__link Новости
-                .header__right 
-                    a(href="favorites.html" title="Избранное").heart  
-                        svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-                            path(fill-rule="evenodd" clip-rule="evenodd" d="M12.0013 21V21C11.7355 21.0016 11.4801 20.8972 11.2913 20.71L3.52134 12.93V12.93C1.49289 10.8804 1.49289 7.57967 3.52134 5.53002V5.53002C5.56648 3.49065 8.8762 3.49065 10.9213 5.53002L12.0013 6.61002L13.0813 5.53002V5.53002C15.1265 3.49065 18.4362 3.49065 20.4813 5.53002V5.53002C22.5098 7.57967 22.5098 10.8804 20.4813 12.93L12.7113 20.71V20.71C12.5226 20.8972 12.2671 21.0016 12.0013 21V21ZM7.22296 6.00003V6.00003C6.3679 5.99616 5.54685 6.33466 4.94296 6.94003L4.94296 6.94003C3.68567 8.20394 3.68568 10.2461 4.94296 11.51L12.003 18.58L19.063 11.51V11.51C20.3203 10.2461 20.3203 8.20394 19.063 6.94003V6.94003C17.7833 5.73109 15.7826 5.73109 14.503 6.94003L12.713 8.74003V8.74003C12.324 9.13216 11.6909 9.13475 11.2988 8.74583C11.2968 8.74391 11.2949 8.74197 11.293 8.74003L9.50297 6.94003V6.94003C8.89908 6.33466 8.07803 5.99616 7.22297 6.00003L7.22296 6.00003Z")
-                        .heart__badge #[span 7]
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z")
+                    ul.header__list
+                        li.header__li 
+                            a(href="#!").header__link курорты 
+                        li.header__li 
+                            a(href="#!").header__link статьи 
+                        li.header__li 
+                            a(href="#!").header__link Новости
+                    .header__right 
+                        a(href="favorites.html" title="Избранное").heart.header__heart
+                            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                path(fill-rule="evenodd" clip-rule="evenodd" d="M12.0013 21V21C11.7355 21.0016 11.4801 20.8972 11.2913 20.71L3.52134 12.93V12.93C1.49289 10.8804 1.49289 7.57967 3.52134 5.53002V5.53002C5.56648 3.49065 8.8762 3.49065 10.9213 5.53002L12.0013 6.61002L13.0813 5.53002V5.53002C15.1265 3.49065 18.4362 3.49065 20.4813 5.53002V5.53002C22.5098 7.57967 22.5098 10.8804 20.4813 12.93L12.7113 20.71V20.71C12.5226 20.8972 12.2671 21.0016 12.0013 21V21ZM7.22296 6.00003V6.00003C6.3679 5.99616 5.54685 6.33466 4.94296 6.94003L4.94296 6.94003C3.68567 8.20394 3.68568 10.2461 4.94296 11.51L12.003 18.58L19.063 11.51V11.51C20.3203 10.2461 20.3203 8.20394 19.063 6.94003V6.94003C17.7833 5.73109 15.7826 5.73109 14.503 6.94003L12.713 8.74003V8.74003C12.324 9.13216 11.6909 9.13475 11.2988 8.74583C11.2968 8.74391 11.2949 8.74197 11.293 8.74003L9.50297 6.94003V6.94003C8.89908 6.33466 8.07803 5.99616 7.22297 6.00003L7.22296 6.00003Z")
+                            .heart__badge #[span 7]
+                        .header__lang.dropdown 
+                            button(type="button").dropdown__button #[span RU]
+                                svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                    path(fill-rule="evenodd" clip-rule="evenodd" d="M12 15.5V15.5C11.7342 15.5015 11.4787 15.3972 11.29 15.21L7.29 11.21V11.21C6.89788 10.8179 6.89788 10.1821 7.29 9.79C7.68212 9.39788 8.31788 9.39788 8.71 9.79L12 13.1L15.3 9.92V9.92C15.6693 9.50935 16.3016 9.47584 16.7122 9.84514C17.1229 10.2145 17.1564 10.8467 16.7871 11.2574C16.754 11.2942 16.7182 11.3285 16.68 11.36L12.68 15.22V15.22C12.4971 15.3963 12.254 15.4964 12 15.5L12 15.5Z")
+                            ul.dropdown__list 
+                                li.dropdown__list-item.dropdown__list-item_active(data-value="RU") RU
+                                li.dropdown__list-item(data-value="ENG") ENG
+                            input(type="text" name="lang" value="RU").dropdown__input_hidden
+                button.header__button 
+                    span.header__button-line
 
