@@ -1,0 +1,45 @@
+// Тема по умолчанию
+:root{
+    --primary: #2563EB;
+    --secondary: #F97316;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main{
+        flex: 1 1 auto;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    *{
+        pointer-events: none;
+    }
+}
+input{
+    border: none;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
