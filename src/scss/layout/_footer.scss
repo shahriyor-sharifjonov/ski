@@ -5,6 +5,18 @@
         align-items: center;
         padding: 11px 0;
         border-top: 1px solid #2563EB;
+        @include media(1200){
+            .footer__p{
+                &:last-of-type{
+                    display: none;
+                }
+            }
+        }
+        @include media(992){
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 8px;
+        }
     }
     &__p{
         font-size: 12px;
@@ -15,6 +27,11 @@
         display: flex;
         justify-content: space-between;
         padding: 30px 0 24px 0;
+        @include media(992){
+            flex-wrap: wrap;
+            row-gap: 24px;
+            column-gap: 20px;
+        }
     }
     &__col{
         display: flex;
@@ -22,19 +39,58 @@
         align-items: flex-start;
         &:not(:first-of-type){
             padding-top: 18px;
+            @include media(992){
+                padding-top: 0;
+            }
+        }
+        &:first-of-type{
+            @include media(992){
+                order: -1;
+                width: calc(100% - 140px);
+                display: grid; 
+                grid-template-columns: 1fr 1fr; 
+                grid-template-rows: 1fr 1fr; 
+                gap: 0px 0px; 
+                grid-template-areas: 
+                  "first second"
+                  "first third";
+            }
+            @include media(768){
+                display: flex;
+                row-gap: 12px;
+            }
+            @include media(576){
+                width: 100%;
+            }
+        }
+        
+        &:last-of-type{
+            @include media(992){
+                order: -1;
+                width: 120px;
+                align-items: flex-end;
+            }
+            @include media(576){
+                width: 100%;
+                order: 5;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
         }
     }
     &__logo{
         margin-bottom: 25px;
+        grid-area: first;
+        @include media(992){
+            margin-bottom: 0;
+        }
     }
     &__contact{
         padding-left: 74px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        &:not(:last-of-type){
-            margin-bottom: 16px;
-        }
         color: var(--primary);
         display: flex;
         align-items: center;
@@ -43,6 +99,16 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
+        &:first-of-type{
+            margin-bottom: 16px;
+            grid-area: second;
+        }
+        &:last-of-type{
+            grid-area: third;
+        }
+        @include media(992){
+            padding-left: 0;
+        }
     }
     &__link{
         font-weight: 500;
