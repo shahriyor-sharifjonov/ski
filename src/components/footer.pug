@@ -13,14 +13,29 @@ mixin footer-home()
                 .footer__col 
                     a(href="#!").footer__logo
                         img(src="@img/logo-blue.svg", alt="" draggable="false" loading="lazy")
+                    a(href="tel:+88001234567").footer__contact 
+                        img(src="@img/icon-phone.svg", alt="" loading="lazy" draggable="false")
+                        p +8 (800) 123-45-67
+                    a(href="mailto:info@domail.com").footer__contact 
+                        img(src="@img/icon-gmail.svg", alt="" loading="lazy" draggable="false")
+                        p info@domail.com
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Курорты
+                    a(href="#!").footer__link Статьи
+                    a(href="#!").footer__link Новости
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Юридческая информация
+                    a(href="#!").footer__link Контакты
+                    a(href="#!").footer__link Сотрудничество
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Файлы cokies
+                    a(href="#!").footer__link Обработка персональных данных
+                    a(href="#!").footer__link Политика конфиденциальности
                 .footer__col 
-                    a(href="#!") 
-                .footer__col 
-                    a(href="#!") 
-                .footer__col 
-                    a(href="#!") 
-                .footer__col 
-                    a(href="#!") 
+                    a(href="#!").footer__app 
+                        img(src="@img/googleplay.png", alt="" draggable="false" loading="lazy")
+                    a(href="#!").footer__app 
+                        img(src="@img/appstore.png", alt="" draggable="false" loading="lazy")
             .footer__bot 
                 p.footer__p Copyright © 2022 Domain.com™. Все права защищены.
                 p.footer__p На сайте размешено: 187 горнолыжных курорта, более 12986 отзывов
