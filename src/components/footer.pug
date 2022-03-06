@@ -1,3 +1,27 @@
+mixin offer()
+    .offer 
+        form(action="").offer__body.container 
+            h2.offer__title Хочешь получать самые свежие новости о горнолыжных курортах и секретные лайфхаки? Подпишись!
+            input(type="email" placeholder="Ваша почта").offer__input
+            button(type="submit").offer__button Подписаться на новости 
+
 mixin footer-home()
-    footer.footer   
-        p footer
+    +offer
+    footer.footer
+        .footer__body.container 
+            .footer__top 
+                .footer__col 
+                    a(href="#!").footer__logo
+                        img(src="@img/logo-blue.svg", alt="" draggable="false" loading="lazy")
+                .footer__col 
+                    a(href="#!") 
+                .footer__col 
+                    a(href="#!") 
+                .footer__col 
+                    a(href="#!") 
+                .footer__col 
+                    a(href="#!") 
+            .footer__bot 
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.
+                p.footer__p На сайте размешено: 187 горнолыжных курорта, более 12986 отзывов
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.

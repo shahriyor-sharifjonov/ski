@@ -85,6 +85,9 @@
             font-size: 14px;
             line-height: 16px;
             color: #4B5563; 
+            @include media(1200){
+                display: none;
+            }
         }
     }
 }

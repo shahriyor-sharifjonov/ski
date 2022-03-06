@@ -83,7 +83,7 @@ document.querySelectorAll('.search').forEach(el => {
         }
     })
 
-    // search disappears
+    // search disappears 
     document.addEventListener('click', e => {
         if(list.classList.contains('active')){
             if(!e.composedPath().includes(el)){

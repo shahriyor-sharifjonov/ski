@@ -1,1 +1,78 @@
-// Футер
+.footer{
+    &__bot{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11px 0;
+        border-top: 1px solid #2563EB;
+    }
+    &__p{
+        font-size: 12px;
+        line-height: 150%;
+        color: #374151;
+    }
+}
+.offer{
+    background: var(--primary);
+    &__body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        min-height: 96px;
+        padding: 20px 15px;
+        @include media(1200){
+            align-items: flex-start;
+        }
+        @include media(992){
+            flex-wrap: wrap;
+        }
+        @include media(768){
+            gap: 0;
+        }
+    }
+    &__title{
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 518px;
+        width: 100%;
+        @include media(768){
+            margin-bottom: 24px;
+        }
+    }
+    &__input{
+        border: 1px solid #F9FAFB;
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid #FFFFFF;
+        max-width: 312px;
+        width: 100%;
+        height: 56px;
+        padding-left: 12px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        @include media(768){
+            margin-bottom: 10px;
+        }
+        &::placeholder{
+            color: #FFFFFF;
+        }
+    }
+    &__button{
+        max-width: 264px;
+        width: 100%;
+        height: 56px;
+        font-size: 18px;
+        line-height: 20px;
+        color: #2563EB;
+        background: #F9FAFB;
+        @include media(768){
+            max-width: 312px;
+        }
+    }
+}
