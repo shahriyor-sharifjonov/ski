@@ -36,21 +36,21 @@ document.querySelectorAll('.search').forEach(el => {
 
     // open content
     button.addEventListener('click', el => {
-        content.classList.add('active');
+      content.classList.add('active');
     })
 
     // open list
     input.addEventListener('click', el => {
-        list.classList.add('active');
+      list.classList.add('active');
     })
 
     // change input value
     results.forEach(el => {
-        el.addEventListener('click', e => {
-            const result = el.querySelector('.search__list-name').innerHTML;
-            input.value = result;
-            list.classList.remove('active');
-        })
+      el.addEventListener('click', e => {
+        const result = el.querySelector('.search__list-name').innerHTML;
+        input.value = result;
+        list.classList.remove('active');
+      })
     })
 
     // keydown action
@@ -85,7 +85,7 @@ document.querySelectorAll('.search').forEach(el => {
 
     // search disappears 
     document.addEventListener('click', e => {
-        if(list.classList.contains('active')){
+        if(list.classList.contains('active') || content.classList.contains('active')){
             if(!e.composedPath().includes(el)){
                 list.classList.remove('active');
                 content.classList.remove('active');
