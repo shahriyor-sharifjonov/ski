@@ -33,7 +33,8 @@
             width: 100%;
             height: 100%;
             z-index: 55;
-            background: #fff;
+            background: #ffffff80;
+            backdrop-filter: blur(15px);
             transform: translateX(100%);
             transition: 500ms ease;
             &.open{
@@ -229,8 +230,6 @@
 .intro{
     margin-top: -88px;
     padding-top: 88px + 40px;
-    min-height: 832px;
-    background: url('../img/intro-bg.png') center / cover no-repeat;
 }
 .home{
     .header__link{

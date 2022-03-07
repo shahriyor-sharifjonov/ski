@@ -2,9 +2,9 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
 
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__menu");
@@ -133,3 +133,35 @@ document.querySelectorAll('.dropdown').forEach(function (dropdownWrapper) {
       }
     }) 
 })
+
+
+
+
+
+ 
+
+const breakpoint = window.matchMedia( '(min-width:993px)' );
+let mySwiper;
+const breakpointChecker = function() {
+  if ( breakpoint.matches === true ) {
+    if ( mySwiper !== undefined ) mySwiper.destroy( true, true );
+    return;
+  } 
+  else if ( breakpoint.matches === false ) {
+    return enableSwiper();
+  }
+
+};
+const enableSwiper = function() {
+  mySwiper = new Swiper(".intro__items", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+      }
+    },
+  });
+}
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();

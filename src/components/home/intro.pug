@@ -1,31 +1,32 @@
 mixin item(title, num)
-    a(href="#!").intro__items-item
-        img(src=`@img/intro-img-${num}.png`, alt="" draggable="false" loading="lazy").intro__items-item-img
-        p.intro__items-num 0#{num}
+    a(href="#!").intro__items-item.swiper-slide
+        p.intro__items-num 0#{num} 
         h3.intro__items-title #{title}
             img(src="@img/icon-right-arrow.svg", alt="" draggable="false" loading="lazy")
+        img(src=`@img/intro-img-${num}.png`, alt="" draggable="false" loading="lazy").intro__items-item-img
 
 mixin intro() 
     .intro 
         .intro__body.container 
-            h1.intro__title 
+            h1.intro__title.hide-xxl
                 span мы нашли для тебя  
                 span все #[b горнолыжные курорты]
                 span мира 
+            h1.intro__title.show-xxl мы нашли для тебя все горнолыжные курорты мира 
             h2.intro__desc 126 горнолыжных курортов, более 45 683 отзывов, яболее 11 040 фотографий, полная стоимость скпипасов и подбор отелей для проживания у склонов!
             .intro__search 
                 include ../search 
                 +intro-search 
                 .intro__search-recommends 
-                    p.intro__search-recommends-p Недавно искали:
+                    p.intro__search-recommends-p Недавно искали: 
                     a(href="#!").intro__search-recommends-item Домбай 
                     a(href="#!").intro__search-recommends-item Роза Хутор 
                     a(href="#!").intro__search-recommends-item Чегет 
-            .intro__items 
-                .intro__items-content
+            .intro__items.swiper 
+                .intro__items-content.swiper-wrapper
                     +item('курорты сочи', 1)
-                    +item('курорты кавказа', 2)
-                    +item('курорты сибири', 3)
+                    +item('курорты кавказа', 2) 
+                    +item('курорты сибири', 3) 
             .intro__img 
                 img(src="@img/intro-img.png", alt="" draggable="false" loading="lazy")
                 
