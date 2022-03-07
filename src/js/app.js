@@ -203,3 +203,24 @@ let blog = new Swiper(".blog__carousel", {
     }
   },
 });
+
+
+let reviews = new Swiper(".reviews__carousel", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.reviews__next',
+    prevEl: '.reviews__prev'
+  },
+  pagination: {
+    el: '.reviews__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 32
+    },
+  },
+});

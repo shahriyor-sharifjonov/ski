@@ -85,7 +85,7 @@
         text-transform: uppercase;
         color: #1F2937;
         transition: 300ms ease-out;
-        span{
+        *{
             font-family: Oswald;
         }
         @include media(576){

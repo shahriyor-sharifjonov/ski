@@ -1179,6 +1179,94 @@
   display: none !important;
 }
 
+.reviews .swiper {
+  overflow: hidden;
+  padding: 10px;
+  margin: -10px;
+}
+
+.reviews .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.reviews__title {
+  margin-bottom: 0;
+}
+
+.reviews__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 33px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.reviews__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+}
+
+.reviews__pagination {
+  display: none !important;
+}
+
+.review {
+  -webkit-box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+          box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+  padding: 32px 25px 23.5px 25px;
+}
+
+.review__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.review__item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.review__item-name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+  min-width: 92px;
+  width: 92px;
+}
+
+.review__item-body {
+  font-size: 14px;
+  line-height: 150%;
+  color: #374151;
+}
+
 .dropdown {
   max-width: 343px;
   position: relative;
@@ -1539,7 +1627,7 @@
   transition: 300ms ease-out;
 }
 
-.card__title span {
+.card__title * {
   font-family: Oswald;
 }
 
@@ -2307,6 +2395,16 @@ a {
   }
 
   .blog__pagination {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .reviews__action {
+    display: none;
+  }
+
+  .reviews__pagination {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
