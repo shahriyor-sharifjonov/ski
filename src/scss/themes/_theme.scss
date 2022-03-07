@@ -49,3 +49,44 @@ a{
         padding: 50px 0;
     }
 }
+.swiper{
+    &-button{
+        &-next,
+        &-prev{
+            width: 40px;
+            height: 40px;
+            position: relative;
+            transition: 300ms ease-out;
+            cursor: pointer;
+        }
+        &-prev{
+            background: url('../img/carousel-prev.svg');
+            &.swiper-button-disabled{
+                background: url('../img/carousel-prev-disabled.svg');
+            }
+        }
+        &-next{
+            background: url('../img/carousel-next.svg');
+            &.swiper-button-disabled{
+                background: url('../img/carousel-next-disabled.svg');
+            }
+        }
+    }
+    &-pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8px;
+        margin-top: 15px;
+        &-bullet{
+            background: #ccc;
+            transition: 300ms ease-out;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            &-active{
+                background: var(--primary);
+            }
+        }
+    }
+}

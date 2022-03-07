@@ -1,0 +1,36 @@
+.blog{
+    background: url('../img/blog-bg.png') center / cover no-repeat;
+    .swiper{
+        overflow: hidden;
+        padding: 10px;
+        margin: -10px;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+    }
+    &__title{
+        margin-bottom: 0;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 33px;
+        column-gap: 20px;
+    }
+    &__action{
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 5px;
+        @include media(768){
+            display: none;
+        }
+    }
+    &__pagination{
+        display: none !important;
+        @include media(768){
+            display: flex !important;
+        }
+    }
+}

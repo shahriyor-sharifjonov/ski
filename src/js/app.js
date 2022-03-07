@@ -179,3 +179,27 @@ document.querySelectorAll('.card').forEach(el => {
     add.classList.add('active');
   })
 })
+
+
+let blog = new Swiper(".blog__carousel", {
+  slidesPerView: 1,
+  spaceBetween: 15,
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.blog__next',
+    prevEl: '.blog__prev'
+  },
+  pagination: {
+    el: '.blog__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 32
+    }
+  },
+});
