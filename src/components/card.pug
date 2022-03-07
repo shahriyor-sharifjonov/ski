@@ -5,9 +5,8 @@ mixin card(title, img1, img2)
             img(src=`@img/card-${img2}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_2.card__image-img
         .card__content 
             .card__header 
-                a(href="#!" itemprop="name").card__title #{title}
+                a(href="#!").card__title #[span(itemprop="name") #{title}]
                 meta(itemprop="description" content="Описание")
-                meta(itemprop="sku" content="0446310786")
                 .card__action   
                     button(type="button").card__button.card__button-favorite.active
                         img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon

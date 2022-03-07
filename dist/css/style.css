@@ -1485,6 +1485,10 @@
   transition: 300ms ease-out;
 }
 
+.card__title span {
+  font-family: Oswald;
+}
+
 .card__action {
   position: relative;
 }
