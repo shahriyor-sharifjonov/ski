@@ -165,3 +165,17 @@ const enableSwiper = function() {
 }
 breakpoint.addListener(breakpointChecker);
 breakpointChecker();
+
+
+document.querySelectorAll('.card').forEach(el => {
+  const add = el.querySelector('.card__button-favorite');
+  const remove = el.querySelector('.card__button-delete');
+  add.addEventListener('click', e => {
+    add.classList.remove('active');
+    remove.classList.add('active');
+  })
+  remove.addEventListener('click', e => {
+    remove.classList.remove('active');
+    add.classList.add('active');
+  })
+})

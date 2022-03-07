@@ -1,0 +1,54 @@
+mixin card(title, img1, img2)
+    a(href="#!").card(itemscope itemtype="http://schema.org/Product") 
+        .card__image 
+            img(src=`@img/card-${img1}.png`, alt="" draggable="false" loading="lazy").card__image-img_1.card__image-img
+            img(src=`@img/card-${img2}.png`, alt="" draggable="false" loading="lazy").card__image-img_2.card__image-img
+        .card__content 
+            .card__header 
+                p(itemprop="name").card__title #{title}
+                .card__action   
+                    button(type="button").card__button.card__button-favorite.active
+                        img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                        span В избранное
+                    button(type="button").card__button.card__button-delete 
+                        img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                        span Удалить 
+            .card__info 
+                p.card__info-name Сезон
+                p.card__info-content 10 декабря - 25 апреля
+            .card__info 
+                p.card__info-name Высота на уронем моря
+                p.card__info-content 3 255 м
+            .card__info 
+                p.card__info-name Общая длина трасс
+                p.card__info-content 13 255 м
+            .card__info 
+                p.card__info-name Сложность трасс
+                .card__info-content.card__difficulty
+                    .card__difficulty_1.card__difficulty-item
+                    .card__difficulty_2.card__difficulty-item
+                    .card__difficulty_3.card__difficulty-item
+                    .card__difficulty_4.card__difficulty-item
+        .card__abs 
+            .card__weather 
+                img(src="@img/icon-weather.svg", alt="" draggable="false" loading="lazy").card__weather-icon
+                span +12 C
+            .card__rating(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating")
+                img(src="@img/card-star.svg", alt="" draggable="false" loading="lazy").card__rating-icon
+                div #[span(itemprop="ratingValue") 4.9] (#[span(itemprop="ratingCount") 125] отзывов)
+                meta(itemprop="bestRating" content="5")
+                meta(itemprop="worstRating" content="1")
+
+
+
+mixin popular()
+    .popular.section 
+        .popular__body.container 
+            h2.popular__title.title Самые популярные горнолыжные курорты
+            .popular__content.cards
+                +card('ДОМБАЙ', 1, 2)
+                +card('Роза хутор', 2, 3)
+                +card('ЧЕГЕТ', 3, 1)
+                +card('ДОМБАЙ', 1, 2)
+                +card('Роза хутор', 2, 3)
+                +card('ЧЕГЕТ', 3, 1)

@@ -43,3 +43,9 @@ ul{
 a{
     text-decoration: none;
 }
+.section{
+    padding: 80px 0 104px 0;
+    @include media(576){
+        padding: 50px 0;
+    }
+}

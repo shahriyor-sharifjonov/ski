@@ -1,1 +1,17 @@
 // Типографика
+.title{
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1F2937;
+    margin-bottom: 33px;
+    @include media(992){
+        font-size: 35px;
+    }
+    @include media(576){
+        font-size: 28px;
+    }
+}
