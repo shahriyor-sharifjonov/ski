@@ -1912,6 +1912,7 @@
 .post {
   -webkit-box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
           box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+  background: #FFFFFF;
 }
 
 .post:hover .post__title {
