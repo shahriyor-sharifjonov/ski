@@ -1349,6 +1349,33 @@
   color: #1F2937;
 }
 
+.about {
+  background: #F9FAFB;
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px 33px;
+}
+
+.about__p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+}
+
 .dropdown {
   max-width: 343px;
   position: relative;
@@ -2421,6 +2448,13 @@ a {
 
   .review__product {
     display: block;
+  }
+
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .home .heart svg {

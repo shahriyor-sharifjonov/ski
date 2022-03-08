@@ -1,0 +1,20 @@
+.about{
+    background: #F9FAFB;
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px 33px;
+        @include media(992){
+            flex-direction: column;
+        }
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 150%;
+        color: #374151;
+    }
+}
