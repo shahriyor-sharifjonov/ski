@@ -8,7 +8,7 @@ mixin review(img)
         .review__meta 
             .review__author 
                 .review__author-img
-                    img(src=`@img/user-${img}.png`, alt="" draggable="false" loading="lazy")
+                    img(src=`@img/user-${img}.png`, alt="" draggable="false" loading="lazy" itemprop="image")
                 .review__author-info
                     div(itemprop="author" itemscope itemtype="https://schema.org/Person").review__author-name 
                         span(itemprop="name") Константинопольский Контантин
