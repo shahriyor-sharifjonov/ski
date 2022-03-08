@@ -5,13 +5,13 @@ mixin star()
 
 mixin review(img)
     .review.swiper-slide(itemprop="review" itemscope itemtype="https://schema.org/Review")
+        meta(itemprop="name" content="review")
         .review__meta 
-            .review__author 
+            .review__author(itemprop="author" itemscope itemtype="https://schema.org/Person") 
                 .review__author-img
                     img(src=`@img/user-${img}.png`, alt="" draggable="false" loading="lazy" itemprop="image")
                 .review__author-info
-                    div(itemprop="author" itemscope itemtype="https://schema.org/Person").review__author-name 
-                        span(itemprop="name") Константинопольский Контантин
+                    .review__author-name(itemprop="name") Константинопольский Контантин
                     .review__rating(itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating")
                         meta(itemprop="worstRating" content="1")
                         meta(itemprop="ratingValue" content="5")
@@ -23,7 +23,7 @@ mixin review(img)
                             +star
                             +star
                     span(itemprop="datePublished").review__date 25.02.2020
-            span(itemprop="name").review__product Курорт Роза Хутор  
+            span.review__product Курорт Роза Хутор  
         .review__body 
             .review__item
                 span.review__item-name Плюсы:
