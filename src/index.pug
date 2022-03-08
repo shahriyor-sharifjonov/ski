@@ -10,6 +10,9 @@ html(lang="ru")
     body.home  
         .wrapper(itemscope itemtype="http://schema.org/Organization") 
             meta(itemprop="name" content="DOMAINF.COM") 
+            div(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" style="display: none")
+                meta(itemprop="ratingValue" content="5")
+                meta(itemprop="reviewCount" content="4")
             include components/header 
             +header-home
             main.main
