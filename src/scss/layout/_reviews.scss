@@ -36,10 +36,16 @@
 .review{
     box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
     padding: 32px 25px 23.5px 25px;
+    @include media(576){
+        padding: 15px;
+    }
     &__item{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        @include media(576){
+            flex-direction: column;
+        }
         &:not(:last-of-type){
             margin-bottom: 10px;
         }
@@ -55,6 +61,74 @@
             font-size: 14px;
             line-height: 150%;
             color: #374151;
+        }
+    }
+    &__meta{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+    &__author{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        column-gap: 9px;
+        &-img{
+            min-width: 84px;
+            width: 84px;
+            height: 84px;
+            @include media(576){
+                min-width: 60px;
+                width: 60px;
+                height: 60px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        &-name{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            color: #1F2937;
+            margin-bottom: 13px;
+            display: block;
+        }
+        &-stars{
+            display: flex;
+            justify-content: flex-start;
+            column-gap: 4px;
+            margin-bottom: 7px;
+        }
+    }
+    &__date{
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: #9CA3AF;        
+    }
+    &__product{
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        color: #1F2937;
+        @include media(1200){
+            display: none;
+        }
+        @include media(992){
+            display: block;
+        }
+        @include media(768){
+            display: none;
         }
     }
 }

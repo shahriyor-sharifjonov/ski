@@ -1267,6 +1267,88 @@
   color: #374151;
 }
 
+.review__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.review__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 9px;
+     -moz-column-gap: 9px;
+          column-gap: 9px;
+}
+
+.review__author-img {
+  min-width: 84px;
+  width: 84px;
+  height: 84px;
+}
+
+.review__author-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.review__author-name {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1F2937;
+  margin-bottom: 13px;
+  display: block;
+}
+
+.review__author-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  margin-bottom: 7px;
+}
+
+.review__date {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
+  color: #9CA3AF;
+}
+
+.review__product {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1F2937;
+}
+
 .dropdown {
   max-width: 343px;
   position: relative;
@@ -2116,6 +2198,10 @@ a {
     width: calc(33.3333% - 22px);
   }
 
+  .review__product {
+    display: none;
+  }
+
   .search__list-distance {
     display: none;
   }
@@ -2333,6 +2419,10 @@ a {
     margin-right: 0;
   }
 
+  .review__product {
+    display: block;
+  }
+
   .home .heart svg {
     fill: var(--primary);
   }
@@ -2408,6 +2498,10 @@ a {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+  }
+
+  .review__product {
+    display: none;
   }
 
   .cards .card {
@@ -2495,6 +2589,23 @@ a {
 
   .info__item-img img {
     width: 20px;
+  }
+
+  .review {
+    padding: 15px;
+  }
+
+  .review__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .review__author-img {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
   }
 
   .cards {

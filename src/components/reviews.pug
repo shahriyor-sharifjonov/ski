@@ -21,7 +21,7 @@ mixin review(img)
                             +star
                             +star
                             +star
-                    span(itemprop="datePublished") 25.02.2020
+                    span(itemprop="datePublished").review__date 25.02.2020
             span.review__product Курорт Роза Хутор  
         .review__body 
             .review__item
@@ -35,19 +35,18 @@ mixin review(img)
                 p.review__item-body Курорт очень популярный, но для туристов ничего не улучшается. Очень жаль. Все держится на хороших спусков для катания.
 
 
-mixin reviews()
+mixin reviews() 
     .reviews.section 
         .reviews__body.container 
-            .reviews__header
-                h2.reviews__title.title отзывы о курортах
+            .reviews__header 
+                h2.reviews__title.title отзывы о курортах 
                 .reviews__action 
-                    .reviews__prev.swiper-button-prev
-                    .reviews__next.swiper-button-next
+                    .reviews__prev.swiper-button-prev 
+                    .reviews__next.swiper-button-next 
             .reviews__carousel.swiper 
                 .swiper-wrapper 
-                    +review(1)
-                    +review(2)
-                    +review(1)
-                    +review(2)
-            .reviews__pagination.swiper-pagination
-        
+                    +review(1) 
+                    +review(2) 
+                    +review(1) 
+                    +review(2) 
+            .reviews__pagination.swiper-pagination 
