@@ -10,7 +10,8 @@ mixin review(img)
                 .review__author-img
                     img(src=`@img/user-${img}.png`, alt="" draggable="false" loading="lazy")
                 .review__author-info
-                    span(itemprop="author").review__author-name Константинопольский Контантин
+                    div(itemprop="author" itemscope itemtype="https://schema.org/Person").review__author-name 
+                        span(itemprop="name") Константинопольский Контантин
                     .review__rating(itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating")
                         meta(itemprop="worstRating" content="1")
                         meta(itemprop="ratingValue" content="5")
@@ -22,7 +23,7 @@ mixin review(img)
                             +star
                             +star
                     span(itemprop="datePublished").review__date 25.02.2020
-            span.review__product Курорт Роза Хутор  
+            span(itemprop="name").review__product Курорт Роза Хутор  
         .review__body 
             .review__item
                 span.review__item-name Плюсы:
@@ -32,7 +33,7 @@ mixin review(img)
                 p.review__item-body Курорт совершенно не развивают. Как приезжала 15 лет назад, так ничего не изменилось. Те же гостиницы, с тем же ремонтом. Пешеходные дорожки совсем (!!!) не чистят. А если чистят, то владельцы ларьков рядом со своим местом. Это просто невероятно. Если вы дошли до подъемника после снегопада и не убились - вы очень ловкий. К Якам на первом уровне могут подойти тоже только ловкие и смелые люди, так как спуска адекватного нет! Ты просто съезжаешь с горки или идёшь гуськом. Нет нормальных санузлов. Хотя это очень популярное место (так как не в каждом кафе есть туалет) и можно было сделать нормально, а не как на вокзале.
             .review__item 
                 span.review__item-name Отзыв:
-                p.review__item-body Курорт очень популярный, но для туристов ничего не улучшается. Очень жаль. Все держится на хороших спусков для катания.
+                p(itemprop="reviewBody").review__item-body Курорт очень популярный, но для туристов ничего не улучшается. Очень жаль. Все держится на хороших спусков для катания.
 
 
 mixin reviews() 
