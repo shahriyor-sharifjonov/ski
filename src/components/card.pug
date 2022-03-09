@@ -1,10 +1,10 @@
 mixin card(title, img1)
     .card(itemscope itemtype="http://schema.org/Product") 
-        a(href="#!" title="посмотреть").card__image 
+        a(href="card.html" title="посмотреть").card__image 
             img(src=`@img/card-${img1}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_1.card__image-img
         .card__content 
             .card__header 
-                a(href="#!").card__title #[h3(itemprop="name") #{title}]
+                a(href="card.html").card__title #[h3(itemprop="name") #{title}]
                 meta(itemprop="description" content="Описание")
                 .card__action   
                     button(type="button").card__button.card__button-favorite.active
@@ -30,10 +30,10 @@ mixin card(title, img1)
                     .card__difficulty_3.card__difficulty-item
                     .card__difficulty_4.card__difficulty-item
         .card__abs 
-            .card__weather 
+            a(href="card.html").card__weather 
                 img(src="@img/icon-weather.svg", alt="" draggable="false" loading="lazy").card__weather-icon
                 span +12 C
-            .card__rating(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating")
+            a(href="reviews.html").card__rating(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating")
                 img(src="@img/card-star.svg", alt="" draggable="false" loading="lazy").card__rating-icon
                 div #[span(itemprop="ratingValue") 4.9] (#[span(itemprop="ratingCount") 125] отзывов)
                 meta(itemprop="bestRating" content="5")

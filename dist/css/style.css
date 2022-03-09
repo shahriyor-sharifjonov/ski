@@ -1656,8 +1656,8 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
-          box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+  -webkit-box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+          box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
   width: 385px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1666,9 +1666,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
 }
 
-.card:hover tra .card__title {
+.card:hover {
+  -webkit-box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+          box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+}
+
+.card:hover .card__title {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.card:hover .card__title {
   color: var(--primary);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1760,6 +1773,12 @@
   color: #2563EB;
   opacity: 0;
   visibility: hidden;
+}
+
+.card__button:hover {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .card__button.active {
@@ -1921,7 +1940,15 @@
 .post {
   -webkit-box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
           box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
   background: #FFFFFF;
+}
+
+.post:hover {
+  -webkit-box-shadow: 0px 4px 10px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+          box-shadow: 0px 4px 10px 0px #3031331A, 0px 0px 1px 0px #3031330D;
 }
 
 .post:hover .post__title {

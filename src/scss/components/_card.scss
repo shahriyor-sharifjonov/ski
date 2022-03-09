@@ -19,12 +19,17 @@
 .card{
     position: relative;
     width: max-content;
-    box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+    box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
     width: 385px;
     display: flex;
     flex-direction: column;
+    transition: 300ms ease-out;
     &:hover{
-        tra
+        box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+        .card__title{
+            color: var(--primary);
+            text-decoration: underline;
+        }
         .card__title{
             color: var(--primary);
             text-decoration-line: underline;
@@ -88,6 +93,9 @@
         color: #2563EB;
         opacity: 0;
         visibility: hidden;
+        &:hover{
+            transform: translateY(-2px);
+        }
         &.active{
             opacity: 1;
             visibility: visible;
