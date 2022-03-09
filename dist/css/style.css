@@ -1006,6 +1006,8 @@
   opacity: 0;
   margin-bottom: -25px;
   margin-right: -16px;
+  width: 32px;
+  height: 32px;
 }
 
 .intro__search .search {
@@ -1129,6 +1131,11 @@
   font-size: 16px;
   line-height: 130%;
   color: #374151;
+}
+
+.info__item-img img {
+  width: 40px;
+  height: 40px;
 }
 
 .no-webp .blog {
@@ -1555,10 +1562,17 @@
           align-items: center;
   cursor: pointer;
   padding: 7.5px 17px 7.5px 25px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.search__list-item:hover {
+  background: #f8f8f8;
 }
 
 .search__list-item.active {
-  background: #fbfbfb;
+  background: #f5f5f5;
 }
 
 .search__list-name {
@@ -1654,7 +1668,7 @@
           flex-direction: column;
 }
 
-.card:hover .card__title {
+.card:hover tra .card__title {
   color: var(--primary);
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1751,6 +1765,11 @@
 .card__button.active {
   opacity: 1;
   visibility: visible;
+}
+
+.card__button-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .card__button-delete {
@@ -1861,6 +1880,11 @@
   color: #FFFFFF;
 }
 
+.card__weather-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .card__rating {
   padding: 8px;
   display: -webkit-box;
@@ -1887,6 +1911,11 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.card__rating-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .post {
@@ -2612,6 +2641,7 @@ a {
 
   .info__item-img img {
     width: 20px;
+    height: 20px;
   }
 
   .review {

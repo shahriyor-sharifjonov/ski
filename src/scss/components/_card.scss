@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     &:hover{
+        tra
         .card__title{
             color: var(--primary);
             text-decoration-line: underline;
@@ -90,6 +91,10 @@
         &.active{
             opacity: 1;
             visibility: visible;
+        }
+        &-icon{
+            width: 24px;
+            height: 24px;
         }
         &-delete{
             position: absolute;
@@ -162,6 +167,10 @@
             text-transform: uppercase;
             color: #FFFFFF;
         }
+        &-icon{
+            width: 24px;
+            height: 24px;
+        }
     }
     &__rating{
         padding: 8px;
@@ -178,6 +187,10 @@
             line-height: 24px;
             text-transform: uppercase;
             color: #FFFFFF;
+        }
+        &-icon{
+            width: 24px;
+            height: 24px;
         }
     }
 }
