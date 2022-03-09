@@ -8,10 +8,10 @@ mixin card(title, img1)
                 meta(itemprop="description" content="Описание")
                 .card__action   
                     button(type="button").card__button.card__button-favorite.active
-                        img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                        img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy" width="24px" height="24px").card__button-icon
                         span В избранное
                     button(type="button").card__button.card__button-delete 
-                        img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                        img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy" width="24px" height="24px").card__button-icon
                         span Удалить 
             .card__info 
                 p.card__info-name Сезон
@@ -31,10 +31,10 @@ mixin card(title, img1)
                     .card__difficulty_4.card__difficulty-item
         .card__abs 
             .card__weather 
-                img(src="@img/icon-weather.svg", alt="" draggable="false" loading="lazy").card__weather-icon
+                img(src="@img/icon-weather.svg", alt="" draggable="false" loading="lazy" width="24px" height="24px").card__weather-icon
                 span +12 C
             .card__rating(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating")
-                img(src="@img/card-star.svg", alt="" draggable="false" loading="lazy").card__rating-icon
+                img(src="@img/card-star.svg", alt="" draggable="false" loading="lazy" width="24px" height="24px").card__rating-icon
                 div #[span(itemprop="ratingValue") 4.9] (#[span(itemprop="ratingCount") 125] отзывов)
                 meta(itemprop="bestRating" content="5")
                 meta(itemprop="worstRating" content="1")
