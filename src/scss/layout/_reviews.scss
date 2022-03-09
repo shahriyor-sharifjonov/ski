@@ -1,8 +1,8 @@
 .reviews{
     .swiper{
         overflow: hidden;
-        padding: 10px;
-        margin: -10px;
+        padding: 15px;
+        margin: -15px;
         &-wrapper{
             display: flex;
             width: max-content;
@@ -36,6 +36,10 @@
 .review{
     box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
     padding: 32px 25px 23.5px 25px;
+    transition: 300ms ease-out;
+    &:hover{
+        box-shadow: 0px 0 15px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+    }
     @include media(576){
         padding: 15px;
     }

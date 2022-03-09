@@ -3,13 +3,14 @@
     transition: 300ms ease-out;
     background: #FFFFFF;
     &:hover{
-        box-shadow: 0px 4px 10px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+        box-shadow: 0px 0 15px 0px #3031331A, 0px 0px 1px 0px #3031330D;
         .post__title{
             color: var(--primary);
             text-decoration: underline;
         }
     }
     &__img{
+        display: block;
         position: relative;
         padding-bottom: 90%;
         img{
@@ -22,9 +23,10 @@
         }
     }
     &__content{
-        padding: 16px 16px 18px 16px;
+        display: block;
     }
     &__title{
+        display: block;
         font-family: Oswald;
         font-style: normal;
         font-weight: normal;
@@ -33,30 +35,34 @@
         text-transform: uppercase;
         color: #1F2937;
         transition: 300ms ease-out;
+        padding: 16px 16px 0 16px;
         @include media(768){
             font-size: 18px;
         }
     }
     &__data{
-        margin: 8px 0;
         font-size: 14px;
+        display: block;
         line-height: 150%;
         color: #374151;
+        padding: 8px 16px;
     }
     &__desc{
         font-size: 14px;
+        display: block;
         line-height: 150%;
         color: #374151;
-        margin-bottom: 30px;
+        padding: 0 16px 30px 16px;
         @include media(768){
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
     }
     &__tags{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 10px 16px;
+        gap: 10px 16px; 
+        padding: 0 16px 18px 16px;
         &-item{
             font-size: 14px;
             line-height: 150%;

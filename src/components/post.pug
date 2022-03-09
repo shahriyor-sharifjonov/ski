@@ -1,11 +1,11 @@
 mixin post(img)
-    a(href="new.html").post.swiper-slide 
-        .post__img  
+    .post.swiper-slide 
+        a(href="new.html").post__img  
             img(src=`@img/post-${img}.png`, alt="" draggable="false" loading="lazy") 
         .post__content 
-            a(href="post.html").post__title Как подобрать сноуборд под вес даже толстого человека 
-            p.post__data 25.02.2022 
-            p.post__desc Приезжала 15 лет назад, так ничего не изменилось. Те же гостиницы, с тем же ремонтом. Пешеходные дорожки совсем (!!!) не чистят. А если чистят... 
+            a(href="new.html").post__title Как подобрать сноуборд под вес даже толстого человека 
+            a(href="new.html").post__data 25.02.2022 
+            a(href="new.html").post__desc Приезжала 15 лет назад, так ничего не изменилось. Те же гостиницы, с тем же ремонтом. Пешеходные дорожки совсем (!!!) не чистят. А если чистят... 
             .post__tags 
                 a(href="#!").post__tags-item #обучение 
                 a(href="#!").post__tags-item #сноуборды 

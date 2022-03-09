@@ -80,10 +80,53 @@
         }
     }
     &__logo{
+        margin-right: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 14px;
         margin-bottom: 25px;
         grid-area: first;
+        @include media(1200){
+            padding-left: 0;
+        }
         @include media(992){
             margin-bottom: 0;
+        }
+        @include media(576){
+            img{
+                width: 64px;
+                height: 64px;
+                @include media(576){
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            @include media(576){
+                // display: none;
+            }
+        }
+        &-title{
+            font-family: Oswald;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #2563EB;
+        }
+        &-p{
+            font-size: 12px;
+            line-height: 16px;
+            color: #374151;  
+            max-width: 162px;          
         }
     }
     &__contact{
@@ -99,11 +142,17 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 16px;
-        &:first-of-type{
+        &:hover{
+            color: #3978ff;
+        }
+        &:nth-child(2){
             margin-bottom: 16px;
             grid-area: second;
+            @include media(992){
+                margin-bottom: 0;
+            }
         }
-        &:last-of-type{
+        &:last-child{
             grid-area: third;
         }
         @include media(992){
@@ -115,6 +164,9 @@
         font-size: 14px;
         line-height: 150%;
         color: var(--primary);
+        &:hover{
+            color: #3978ff;
+        }
     }
     &__list{
         display: flex;
@@ -181,6 +233,15 @@
         line-height: 20px;
         color: #2563EB;
         background: #F9FAFB;
+        transition: 300ms ease-out;
+        &:hover{
+            color: #2563EB;
+            background: #eeeeee;
+        }
+        &:active{
+            background: #e2e1e1;
+            color: #3978ff;
+        }
         @include media(768){
             max-width: 312px;
         }

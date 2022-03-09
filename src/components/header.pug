@@ -3,7 +3,10 @@ mixin header-home()
         nav.header__nav 
             .container.header__inner 
                 a(href="index.html" title="home page").header__logo
-                    img(src="@img/logo-white.svg", alt="" draggable="false" width="240px" height="64px")
+                    img(src="@img/logo-white-squeare.svg", alt="" draggable="false")
+                    .header__logo-info
+                        span.header__logo-title Domainf.com
+                        span.header__logo-p Все горнолыжные курорты мира в одном месте
                 .header__menu
                     include search 
                     +header-search 

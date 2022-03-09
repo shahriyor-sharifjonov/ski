@@ -129,10 +129,16 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
+        position: relative;
+        overflow: visible;
         @include media(992){
             display: block;
-            overflow: hidden;
             margin-bottom: -16px;
+        }
+        &-swiper{
+            @include media(992){
+                overflow: hidden;
+            }
         }
         &-content{
             display: flex;
@@ -263,6 +269,38 @@
                     margin-right: 0;
                 }
             }
+        }
+        &-buttons{
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -15px;
+            width: calc(100% + 30px);
+            pointer-events: none;
+            display: none;
+            @include media(992){
+                display: flex;
+            }
+        }
+        &-next,
+        &-prev{
+            border-radius: 50%;
+            pointer-events: all;
+            width: 32px !important;
+            height: 32px !important;
+            background: url('../img/icon-right-arrow-2.svg'), #fff !important;
+            background-position: 50% 50% !important;
+            background-size: 70% 70% !important;
+            background-repeat: no-repeat !important;
+            &.swiper-button-disabled{
+                opacity: 50%;
+                cursor: auto;
+            }
+        }
+        &-prev{
+            transform: rotate(180deg);
         }
     }
     &__search{
