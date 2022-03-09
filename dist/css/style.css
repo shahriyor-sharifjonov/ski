@@ -1649,16 +1649,6 @@
           flex-direction: column;
 }
 
-.card:hover .card__image-img_1 {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.card:hover .card__image-img_2 {
-  opacity: 1;
-  visibility: visible;
-}
-
 .card:hover .card__title {
   color: var(--primary);
   -webkit-text-decoration-line: underline;
@@ -1681,22 +1671,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.card__image-img_1 {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
-  transition: 300ms ease-out;
-}
-
-.card__image-img_2 {
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: 300ms ease-out;
-  -o-transition: 300ms ease-out;
-  transition: 300ms ease-out;
 }
 
 .card__content {
