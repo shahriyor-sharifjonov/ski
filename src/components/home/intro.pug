@@ -3,7 +3,8 @@ mixin item(title, num)
         p.intro__items-num 0#{num} 
         h3.intro__items-title #{title}
             img(src="@img/icon-right-arrow.svg", alt="" draggable="false" loading="lazy")
-        img(src=`@img/intro-img-${num}.png`, alt="" draggable="false" loading="lazy").intro__items-item-img
+        .intro__items-item-img
+            img(src=`@img/intro-img-${num}.png`, alt="" draggable="false" loading="lazy")
 
 
 mixin info()
