@@ -843,12 +843,13 @@
   color: #FFFFFF;
 }
 
-.intro__title span:nth-child(2) b {
+.intro__title span:nth-child(2) h1 {
   font-family: Oswald;
   font-weight: 600;
   font-style: normal;
   font-size: 64px;
   line-height: 120%;
+  display: inline-block;
 }
 
 .intro__title span:nth-child(3) {

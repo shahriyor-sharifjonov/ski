@@ -63,12 +63,13 @@
                 @include media(1700){
                     padding-left: 56px;
                 }
-                b{
+                h1{
                     font-family: Oswald;
                     font-weight: 600;
                     font-style: normal;
                     font-size: 64px;
                     line-height: 120%;
+                    display: inline-block;
                 }      
             }
             &:nth-child(3){

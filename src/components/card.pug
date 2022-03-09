@@ -1,8 +1,7 @@
-mixin card(title, img1, img2)
+mixin card(title, img1)
     .card(itemscope itemtype="http://schema.org/Product") 
         a(href="#!").card__image 
             img(src=`@img/card-${img1}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_1.card__image-img
-            img(src=`@img/card-${img2}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_2.card__image-img
         .card__content 
             .card__header 
                 a(href="#!").card__title #[h3(itemprop="name") #{title}]
@@ -47,9 +46,9 @@ mixin popular()
         .popular__body.container 
             h2.popular__title.title Самые популярные горнолыжные курорты
             .popular__content.cards
-                +card('ДОМБАЙ', 1, 2)
-                +card('Роза хутор', 2, 3)
-                +card('ЧЕГЕТ', 3, 1)
-                +card('ДОМБАЙ', 1, 2)
-                +card('Роза хутор', 2, 3)
-                +card('ЧЕГЕТ', 3, 1)
+                +card('ДОМБАЙ', 1)
+                +card('Роза хутор', 2)
+                +card('ЧЕГЕТ', 3)
+                +card('ДОМБАЙ', 1)
+                +card('Роза хутор', 2)
+                +card('ЧЕГЕТ', 3)
