@@ -4,7 +4,7 @@ mixin star()
 
 
 mixin review(img)
-    .review.swiper-slide(itemprop="review" itemscope itemtype="https://schema.org/Review")
+    a(href="reviews.html").review.swiper-slide(itemprop="review" itemscope itemtype="https://schema.org/Review")
         meta(itemprop="name" content="review")
         .review__meta 
             .review__author(itemprop="author" itemscope itemtype="https://schema.org/Person") 

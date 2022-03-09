@@ -1,5 +1,5 @@
 mixin post(img)
-    .post.swiper-slide 
+    a(href="new.html").post.swiper-slide 
         .post__img  
             img(src=`@img/post-${img}.png`, alt="" draggable="false" loading="lazy") 
         .post__content 

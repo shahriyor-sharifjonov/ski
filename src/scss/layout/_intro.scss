@@ -211,6 +211,7 @@
                 img{
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                 }
             }
         }
@@ -353,6 +354,7 @@
         }
         @include media(576){
             width: calc(50% - 7.5px);
+            column-gap: 4px;
         }
         &-p{
             font-family: Oswald;
@@ -362,7 +364,7 @@
             line-height: 130%;
             color: #374151;
             @include media(576){
-                font-size: 14px;
+                font-size: 16px;
             }
         }
         &-img{   
@@ -370,8 +372,8 @@
                 width: 40px;
                 height: 40px;
                 @include media(576){
-                    width: 20px;
-                    height: 20px;
+                    width: 16px;
+                    height: 16px;
                 }
             }
         }
