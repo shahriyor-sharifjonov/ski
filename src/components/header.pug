@@ -2,7 +2,7 @@ mixin header-home()
     header.header
         nav.header__nav 
             .container.header__inner 
-                a(href="index.html").header__logo
+                a(href="index.html" title="home page").header__logo
                     img(src="@img/logo-white.svg", alt="" draggable="false" width="240px" height="64px")
                 .header__menu
                     include search 
@@ -27,7 +27,7 @@ mixin header-home()
                                 li.dropdown__list-item.dropdown__list-item_active(data-value="RU") RU
                                 li.dropdown__list-item(data-value="ENG") ENG
                             input(type="text" name="lang" value="RU").dropdown__input_hidden
-                button.header__button 
+                button(title="menu").header__button 
                     span.header__button-line 
 
 

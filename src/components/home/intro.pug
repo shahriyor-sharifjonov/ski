@@ -2,7 +2,7 @@ mixin item(title, num)
     a(href="#!").intro__items-item.swiper-slide
         p.intro__items-num 0#{num} 
         h3.intro__items-title #{title}
-            img(src="@img/icon-right-arrow.svg", alt="" draggable="false" loading="lazy" width="32px" height="32px")
+            img(src="@img/icon-right-arrow.svg", alt="" draggable="false" loading="lazy")
         .intro__items-item-img
             img(src=`@img/intro-img-${num}.png`, alt="" draggable="false" loading="lazy")
 
