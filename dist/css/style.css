@@ -948,7 +948,7 @@
   display: none;
 }
 
-.intro__title span:nth-child(1) {
+.intro__title div:nth-child(1) {
   padding-left: 16px;
   font-family: Oswald;
   font-style: normal;
@@ -959,7 +959,7 @@
   color: #FFFFFF;
 }
 
-.intro__title span:nth-child(2) {
+.intro__title div:nth-child(2) {
   padding-left: 171px;
   font-family: Oswald;
   font-style: normal;
@@ -970,7 +970,7 @@
   color: #FFFFFF;
 }
 
-.intro__title span:nth-child(2) h1 {
+.intro__title div:nth-child(2) h1 {
   font-family: Oswald;
   font-weight: 600;
   font-style: normal;
@@ -979,7 +979,7 @@
   display: inline-block;
 }
 
-.intro__title span:nth-child(3) {
+.intro__title div:nth-child(3) {
   padding-left: 617px;
   font-family: Oswald;
   font-style: normal;
@@ -2386,11 +2386,11 @@ a {
 }
 
 @media (max-width: 1700px) {
-  .intro__title span:nth-child(2) {
+  .intro__title div:nth-child(2) {
     padding-left: 56px;
   }
 
-  .intro__title span:nth-child(3) {
+  .intro__title div:nth-child(3) {
     padding-left: 515px;
   }
 
