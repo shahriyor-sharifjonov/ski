@@ -1,6 +1,7 @@
 mixin card(title, img1)
     .card(itemscope itemtype="http://schema.org/Product")
         div(itemprop="offers" itemscope itemtype="https://schema.org/Offer")
+            meta(itemprop="availability" content="999999999")
         a(href="card.html" title="посмотреть").card__image 
             img(src=`@img/card-${img1}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_1.card__image-img
         .card__content 
