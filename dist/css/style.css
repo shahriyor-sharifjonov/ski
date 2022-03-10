@@ -440,7 +440,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background: white;
+  background: var(--primary);
 }
 
 .header__button::before {
@@ -498,13 +498,13 @@
   line-height: 30px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #2563EB;
 }
 
 .header__logo-p {
   font-size: 12px;
   line-height: 16px;
-  color: #E5E7EB;
+  color: #374151;
   max-width: 162px;
 }
 
@@ -634,6 +634,14 @@
   padding-top: 128px;
 }
 
+.home .header__logo-title {
+  color: #FFFFFF;
+}
+
+.home .header__logo-p {
+  color: #E5E7EB;
+}
+
 .home .header__link {
   color: #fff;
 }
@@ -648,6 +656,12 @@
 
 .home .header__lang .dropdown__button svg {
   fill: #fff;
+}
+
+.home .header__button::before,
+.home .header__button::after,
+.home .header__button-line {
+  background: white;
 }
 
 .footer__bot {

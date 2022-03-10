@@ -8,26 +8,13 @@ html(lang="ru")
         link(rel="shortcut icon", href="@img/favicon.png", type="image/x-icon")
         link(rel="stylesheet", href="css/style.min.css" defer)
         title Все горнолыжные курорты мира в одном месте
-    body.home  
-        .wrapper(itemscope itemtype="http://schema.org/Organization") 
-            meta(itemprop="name" content="DOMAINF.COM") 
-            meta(itemprop="address" content="Москва")
-            div(itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating" style="display: none")
-                meta(itemprop="ratingValue" content="5")
-                meta(itemprop="reviewCount" content="12986")
+    body  
+        .wrapper 
             include components/header 
-            +header-home 
+            +header
             main.main
-                include components/home/intro 
-                +intro 
                 include components/card 
                 +popular 
-                include components/home/blog  
-                +blog
-                include components/reviews  
-                +reviews
-                include components/home/about  
-                +about
             include components/footer 
-            +footer-home 
+            +footer 
         script(src="js/app.js")  
