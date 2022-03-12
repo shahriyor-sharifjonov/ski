@@ -236,6 +236,22 @@ let reviews = new Swiper(".reviews__carousel", {
 });
 
 $(document).ready(function() {
+  $(".accordion2 > .accordion__button").on("click", function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".accordion2 > .accordion__content")
+        .slideUp(200);
+    } else {
+      $(this).addClass("active");
+      $(this)
+        .siblings(".accordion__content")
+        .slideDown(200);
+    }
+  });
+});
+
+$(document).ready(function() {
   $(".accordion > .accordion__button").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
