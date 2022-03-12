@@ -1,4 +1,4 @@
-mixin card(title, img1)
+mixin card(title, img1, tag, active)
     .card(itemscope itemtype="http://schema.org/Product")
         div(itemprop="offers" itemscope itemtype="https://schema.org/Offer")
             meta(itemprop="availability" content="999999999")
@@ -8,15 +8,28 @@ mixin card(title, img1)
             img(src=`@img/card-${img1}.png`, alt="" draggable="false" loading="lazy" itemprop="image").card__image-img_1.card__image-img
         .card__content 
             .card__header 
-                a(href="card.html").card__title #[h3(itemprop="name") #{title}]
+                if tag == 'h3'
+                    a(href="card.html").card__title #[h3(itemprop="name") #{title}]
+                if tag == 'h2'
+                    a(href="card.html").card__title #[h2(itemprop="name") #{title}]
                 meta(itemprop="description" content="Описание")
                 .card__action   
-                    button(type="button").card__button.card__button-favorite.active
-                        img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon
-                        span В избранное  
-                    button(type="button").card__button.card__button-delete 
-                        img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy").card__button-icon
-                        span Удалить 
+                    if active == 'not-active'
+                        button(type="button").card__button.card__button-favorite.active
+                            img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                            span В избранное  
+                    else
+                        button(type="button").card__button.card__button-favorite
+                            img(src="@img/card-heart.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                            span В избранное  
+                    if active == 'active'
+                        button(type="button").card__button.card__button-delete.active 
+                            img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                            span Удалить 
+                    else
+                        button(type="button").card__button.card__button-delete 
+                            img(src="@img/card-heart-fill.svg", alt="" draggable="false" loading="lazy").card__button-icon
+                            span Удалить 
             .card__info  
                 p.card__info-name Сезон
                 p.card__info-content 10 декабря - 25 апреля
@@ -50,9 +63,9 @@ mixin popular()
         .popular__body.container 
             h2.popular__title.title Самые популярные горнолыжные курорты
             .popular__content.cards
-                +card('ДОМБАЙ', 1)
-                +card('Роза хутор', 2)
-                +card('ЧЕГЕТ', 3)
-                +card('ДОМБАЙ', 1)
-                +card('Роза хутор', 2)
-                +card('ЧЕГЕТ', 3)
+                +card('ДОМБАЙ', 1, 'h3', 'not-active')
+                +card('Роза хутор', 2, 'h3', 'not-active')
+                +card('ЧЕГЕТ', 3, 'h3', 'not-active')
+                +card('ДОМБАЙ', 1, 'h3', 'not-active')
+                +card('Роза хутор', 2, 'h3', 'not-active')
+                +card('ЧЕГЕТ', 3, 'h3', 'not-active')

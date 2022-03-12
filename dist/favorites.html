@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Domain.com - это сервис агрегатор всех горнолыжных курортов мира, здесь вы сможете найти полную информацию о каждом горнолыжном склоне, его протяженность, количество красных, черных, синих трасс. Можно подобрать самый удобный отель рядом с  подъемником. Перед поездкой мы рекомендуем сразу найти хорошего инструктора по горным лыжам, это позволит Вам не нарваться на мошенников, в нашей базе более 772 проверенных инструкторов, просто подайте заявку и мы подберем для вас инструктора по горным лыжам или сноуборду. Также на нашем сайте вы можете найти трансфер от аэропортов до отелей. ">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220311003507" defer>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220311190755">
     <title>Все горнолыжные курорты мира в одном месте</title>
   </head>
   <body> 
@@ -78,14 +78,31 @@
                     <div class="breadcrumbs__icon breadcrumbs__icon" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="index.html" title="Главная" itemprop="item"> 
                         <meta itemprop="name" content="Главная">
                         <meta itemprop="position" content="1"><img src="img/icon-home.svg" alt="" draggable="false" loading="lazy"></a></div>
-                    <div class="breadcrumbs__item first" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a class="breadcrumbs__link" href="#!" itemprop="item"><span itemprop="name">Избранное</span>
-                        <meta itemprop="position" content="2"></a></div>
+                    <div class="breadcrumbs__item first" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                      <p class="breadcrumbs__link" itemprop="item"><span itemprop="name">Избранное</span>
+                        <meta itemprop="position" content="2">
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="popular section"> 
-                  <div class="popular__body container"> 
-                    <h2 class="popular__title title">Самые популярные горнолыжные курорты</h2>
-                    <div class="popular__content cards">
+                <div class="favorites"> 
+                  <div class="favorites__body container">
+                    <div class="favorites__header"> 
+                      <h1 class="favorites__title title_big">Избранное </h1>
+                                    <div class="filter dropdown"> 
+                                      <button class="dropdown__button" type="button"><span>По популярности</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB"></path>
+                                        </svg>
+                                      </button>
+                                      <ul class="dropdown__list"> 
+                                        <li class="dropdown__list-item dropdown__list-item_active" data-value="По популярности">По популярности</li>
+                                        <li class="dropdown__list-item" data-value="По Алфавитом">По алфавитом</li>
+                                      </ul>
+                                      <input class="dropdown__input_hidden" type="text" name="lang" value="По популярности">
+                                    </div>
+                    </div>
+                    <div class="favorites__content cards">
                               <div class="card" itemscope itemtype="http://schema.org/Product">
                                 <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                                   <meta itemprop="availability" content="999999999">
@@ -94,11 +111,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-1.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-1.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">ДОМБАЙ</h3></a>
+                                      <h2 itemprop="name">ДОМБАЙ</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -136,11 +153,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-2.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-2.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">Роза хутор</h3></a>
+                                      <h2 itemprop="name">Роза хутор</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -178,11 +195,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-3.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-3.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">ЧЕГЕТ</h3></a>
+                                      <h2 itemprop="name">ЧЕГЕТ</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -220,11 +237,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-1.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-1.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">ДОМБАЙ</h3></a>
+                                      <h2 itemprop="name">ДОМБАЙ</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -262,11 +279,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-2.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-2.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">Роза хутор</h3></a>
+                                      <h2 itemprop="name">Роза хутор</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -304,11 +321,11 @@
                                 </div><a class="card__image" href="card.html" title="посмотреть"> <picture><source srcset="img/card-3.webp" type="image/webp"><img class="card__image-img_1 card__image-img" src="img/card-3.png" alt="" draggable="false" loading="lazy" itemprop="image"></picture></a>
                                 <div class="card__content"> 
                                   <div class="card__header"> <a class="card__title" href="card.html">
-                                      <h3 itemprop="name">ЧЕГЕТ</h3></a>
+                                      <h2 itemprop="name">ЧЕГЕТ</h2></a>
                                     <meta itemprop="description" content="Описание">
                                     <div class="card__action">  
-                                      <button class="card__button card__button-favorite active" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
-                                      <button class="card__button card__button-delete" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
+                                      <button class="card__button card__button-favorite" type="button"><img class="card__button-icon" src="img/card-heart.svg" alt="" draggable="false" loading="lazy"><span>В избранное  </span></button>
+                                      <button class="card__button card__button-delete active" type="button"> <img class="card__button-icon" src="img/card-heart-fill.svg" alt="" draggable="false" loading="lazy"><span>Удалить </span></button>
                                     </div>
                                   </div>
                                   <div class="card__info"> 
@@ -341,6 +358,15 @@
                     </div>
                   </div>
                 </div>
+                        <div class="pagination"> 
+                          <div class="pagination__body container"> <a class="pagination__item" href="#!">
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.362 16.9999C13.0898 16.9989 12.8298 16.887 12.642 16.6899L8.78195 12.6899H8.78195C8.40081 12.3011 8.40081 11.6788 8.78195 11.2899L12.782 7.28994C13.1741 6.89782 13.8098 6.89782 14.202 7.28994C14.5941 7.68206 14.5941 8.31782 14.202 8.70994L10.902 11.9999L14.082 15.2999C14.4697 15.69 14.4697 16.3199 14.082 16.7099C13.8908 16.8996 13.6312 17.0042 13.362 16.9999Z" fill="#9CA3AF"/>
+</svg></a><a class="pagination__item active" href="#!">1</a><a class="pagination__item" href="#!">2</a><a class="pagination__item" href="#!">...</a><a class="pagination__item" href="#!">5</a><a class="pagination__item" href="#!">
+                               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5019 16.9999C10.2361 17.0015 9.98061 16.8971 9.79189 16.7099C9.39977 16.321 9.39717 15.6878 9.78609 15.2957C9.78802 15.2938 9.78995 15.2919 9.79189 15.2899L13.1019 11.9999L9.92189 8.68993V8.68993C9.53417 8.29989 9.53417 7.66997 9.92189 7.27993L9.92189 7.27993C10.3108 6.88781 10.944 6.88521 11.3361 7.27413C11.338 7.27606 11.34 7.27799 11.3419 7.27993L15.2019 11.2799H15.2019C15.583 11.6688 15.583 12.2911 15.2019 12.6799L11.2019 16.6799C11.0206 16.8757 10.7686 16.9909 10.5019 16.9999L10.5019 16.9999Z" fill="#9CA3AF"/>
+</svg></a></div>
+                        </div>
       </main>
                   <div class="offer"> 
                     <form class="offer__body container" action="#!"> 
@@ -369,6 +395,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.js?_v=20220311003507"> </script>
+    <script src="js/app.js?_v=20220311190755"> </script>
   </body>
 </html>
