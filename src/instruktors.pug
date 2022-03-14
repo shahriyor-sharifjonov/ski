@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description", content="Domain.com - это сервис агрегатор всех горнолыжных курортов мира, здесь вы сможете найти полную информацию о каждом горнолыжном склоне, его протяженность, количество красных, черных, синих трасс. Можно подобрать самый удобный отель рядом с  подъемником. Перед поездкой мы рекомендуем сразу найти хорошего инструктора по горным лыжам, это позволит Вам не нарваться на мошенников, в нашей базе более 772 проверенных инструкторов, просто подайте заявку и мы подберем для вас инструктора по горным лыжам или сноуборду. Также на нашем сайте вы можете найти трансфер от аэропортов до отелей. ")
+        link(rel="shortcut icon", href="@img/favicon.png", type="image/x-icon")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Все горнолыжные курорты мира в одном месте
+    body  
+        .wrapper
+            include components/header 
+            +header
+            main.main   
+                include components/breadcrumbs 
+                +breadcrumbs(4, 'Курорты', 'Северный Кавказ', 'Россия', 'Домбай')
+                include components/menu
+                +menu(5)
+            include components/menu
+            +menu2(5)
+            include components/footer 
+            +footer 
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
+        script(src="js/app.js")  

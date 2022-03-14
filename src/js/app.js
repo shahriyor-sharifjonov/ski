@@ -270,3 +270,10 @@ $(document).ready(function() {
     }
   });
 });
+
+document.querySelectorAll('.menu__md').forEach(el=>{
+  const btn = el.querySelector('.menu__md-button');
+  btn.addEventListener('click', click=>{
+    btn.classList.toggle('active');
+  })
+})
