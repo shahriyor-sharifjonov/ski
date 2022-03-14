@@ -236,14 +236,16 @@ let reviews = new Swiper(".reviews__carousel", {
 });
 
 $(document).ready(function() {
-  $(".accordion2 > .accordion__button").on("click", function() {
+  $(".accordion-container > .accordion2 > .accordion__button").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this)
         .siblings(".accordion2 > .accordion__content")
         .slideUp(200);
     } else {
+      // $(".accordion > .accordion__button").removeClass("active");
       $(this).addClass("active");
+      // $(".accordion__content").slideUp(200);
       $(this)
         .siblings(".accordion__content")
         .slideDown(200);
@@ -252,18 +254,18 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".accordion > .accordion__button").on("click", function() {
+  $(".accordion-container > .accordion > .accordion__button").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
       $(this)
-        .siblings(".accordion__content")
+        .siblings(".accordion-container > .accordion > .accordion__content")
         .slideUp(200);
     } else {
-      $(".accordion > .accordion__button").removeClass("active");
+      $(".accordion-container > .accordion > .accordion__button").removeClass("active");
       $(this).addClass("active");
-      $(".accordion__content").slideUp(200);
+      $(".accordion-container > .accordion > .accordion__content").slideUp(200);
       $(this)
-        .siblings(".accordion__content")
+        .siblings(".accordion-container > .accordion > .accordion__content")
         .slideDown(200);
     }
   });

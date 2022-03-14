@@ -36,6 +36,15 @@
         color: #1F2937;
         transition: 300ms ease-out;
         padding: 16px 16px 0 16px;
+        *{
+            font-family: Oswald;  
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: inherit;
+        }
         @include media(768){
             font-size: 18px;
         }

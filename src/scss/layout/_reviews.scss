@@ -1,4 +1,7 @@
 .reviews{
+    &.bg{
+        background: url('../img/reviews-bg.png') center / cover no-repeat;
+    }
     .swiper{
         overflow: hidden;
         padding: 15px;
