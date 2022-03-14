@@ -2611,6 +2611,7 @@
 
 .menu__md {
   display: none;
+  position: relative;
 }
 
 .menu__md-button {
@@ -2642,7 +2643,8 @@
 }
 
 .menu__md-button.active ~ .menu__md-content {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .menu__md-button svg {
@@ -2654,7 +2656,19 @@
 }
 
 .menu__md-content {
-  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 56;
+  background: #fff;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+          box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
+  top: 100%;
   border: 1px solid #cecece;
 }
 
