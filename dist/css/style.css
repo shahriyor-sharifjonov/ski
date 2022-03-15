@@ -1759,6 +1759,28 @@
   color: #2563EB;
 }
 
+.cost__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 52px;
+}
+
+.cost__info-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+  max-width: 831px;
+  width: 100%;
+}
+
 .dropdown {
   max-width: 343px;
   position: relative;
@@ -4574,6 +4596,18 @@ a {
   .cost__item {
     max-width: 265px;
     width: 100%;
+  }
+
+  .cost__info {
+    margin-top: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .cost__info-p {
+    font-size: 13px;
+    max-width: 370px;
   }
 
   .cards {
