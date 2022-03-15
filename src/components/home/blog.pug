@@ -1,0 +1,38 @@
+include ../post 
+
+mixin blog()
+    .blog.section 
+        .blog__body.container 
+            .blog__header
+                h2.title.blog__title Последние новости и статьи
+                .blog__action
+                    .swiper-button-prev.blog__prev 
+                    .swiper-button-next.blog__next 
+            .blog__carousel.swiper 
+                .swiper-wrapper 
+                    +post(1)
+                    +post(2)
+                    +post(3)
+                    +post(1)
+                    +post(2)
+                    +post(3)
+            .blog__pagination.swiper-pagination 
+
+mixin blog2()
+    .blog.section 
+        .blog__body.container 
+            .blog__header
+                h2.title.blog__title еще интересные статьи в данной рубрике
+                .blog__action
+                    .swiper-button-prev.blog__prev 
+                    .swiper-button-next.blog__next 
+            .blog__carousel.swiper 
+                .swiper-wrapper 
+                    +post(1)
+                    +post(2)
+                    +post(3)
+                    +post(1)
+                    +post(2)
+                    +post(3)
+            .blog__pagination.swiper-pagination 
+

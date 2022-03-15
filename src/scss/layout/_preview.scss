@@ -1,0 +1,92 @@
+.preview{
+    padding: 35px 0;
+    @include media(1200){
+        padding: 16px 0;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        gap: 16px 32px;
+        @include media(1200){
+            flex-direction: column;
+        }
+    }
+    &__col{
+        width: calc(50% - 16px);
+        &.preview__first{
+            .preview__info{
+                display: none;
+                @include media(1200){
+                    display: flex;
+                }
+            }
+        }
+        @include media(1200){
+            width: 100%;
+            &.preview__second{
+                .preview__info{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 25px;
+        @include media(576){
+            margin-bottom: 10px;
+        }
+    }
+    &__info{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px 50px;
+        flex-wrap: wrap;
+        @include media(1400){
+            gap: 10px 25px;
+        }
+        @include media(1200){
+            justify-content: flex-start;
+            margin-bottom: 25px;
+        }
+        @include media(992){
+            gap: 10px;
+        }
+        @include media(576){
+            margin-bottom: 10px;
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            column-gap: 4px;
+        }
+        &-p{
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #374151;
+            &.light{
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+            }
+            a{
+                margin-left: 6px;
+                margin-right: 6px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                text-decoration-line: underline;
+                color: #1E40AF;
+                padding-bottom: 2px;
+            }
+            u{
+                margin-left: -4px;
+            }
+        }
+    }
+}

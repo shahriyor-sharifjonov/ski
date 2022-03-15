@@ -1,0 +1,14 @@
+.favorites{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 48px;
+        column-gap: 20px;
+        @include media(576){
+            margin-bottom: 20px;
+        }
+    }
+    .filter{
+    }
+}

@@ -1,0 +1,33 @@
+.pagination{
+    padding: 32px 72px;
+    &__body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 8px;
+    }
+    &__item{
+        min-width: 32px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #9CA3AF;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #9CA3AF;
+        transition: 300ms ease-out;
+        &:hover{
+            background: #e1e1e1;
+        }
+        &.active{
+            background: #2563EB;
+            border-color: #2563EB;
+            color: #F9FAFB;
+        }
+    }
+}

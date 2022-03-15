@@ -1,0 +1,29 @@
+mixin breadcrumbs(length, ...items)
+    .breadcrumbs
+        .breadcrumbs__list.container(itemscope itemtype="https://schema.org/BreadcrumbList")
+            .breadcrumbs__icon(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem").breadcrumbs__icon
+                a(href="index.html" title="Главная" itemprop="item") 
+                    meta(itemprop="name" content="Главная")
+                    meta(itemprop="position" content=`1`)
+                    img(src="@img/icon-home.svg", alt="" draggable="false" loading="lazy")
+            each item, index in items 
+                if index == 0
+                    .breadcrumbs__item.first(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+                        if index == length - 1
+                            p(itemprop="item").breadcrumbs__link
+                                span(itemprop="name")= item 
+                                meta(itemprop="position" content=`${index+2}`)
+                        else    
+                            a(href="#!" itemprop="item").breadcrumbs__link
+                                span(itemprop="name")= item 
+                                meta(itemprop="position" content=`${index+2}`)
+                else
+                    .breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+                        if index == length - 1
+                            p(itemprop="item").breadcrumbs__link
+                                span(itemprop="name")= item 
+                                meta(itemprop="position" content=`${index+2}`)
+                        else    
+                            a(href="#!" itemprop="item").breadcrumbs__link
+                                span(itemprop="name")= item 
+                                meta(itemprop="position" content=`${index+2}`)

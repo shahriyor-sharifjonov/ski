@@ -1,0 +1,85 @@
+mixin offer()
+    .offer 
+        form(action="#!").offer__body.container 
+            p.offer__title Хочешь получать самые свежие новости о горнолыжных курортах и секретные лайфхаки? Подпишись!
+            input(type="email" placeholder="Ваша почта").offer__input
+            button(type="submit").offer__button Подписаться на новости 
+
+mixin footer-home()
+    +offer
+    footer.footer 
+        .footer__body.container 
+            .footer__top 
+                .footer__col 
+                    a(href="index.html" title="home page").footer__logo
+                        img(src="@img/logo-blue-squeare.svg", alt="" draggable="false" itemprop="image")
+                        .footer__logo-info
+                            span.footer__logo-title Domainf.com
+                            span.footer__logo-p Все горнолыжные курорты мира в одном месте
+                    a(href="tel:+88001234567").footer__contact 
+                        img(src="@img/icon-phone.svg", alt="" loading="lazy" draggable="false")
+                        p(itemprop="telephone") +8 (800) 123-45-67
+                    a(href="mailto:info@domail.com").footer__contact 
+                        img(src="@img/icon-gmail.svg", alt="" loading="lazy" draggable="false")
+                        p(itemprop="email") info@domail.com
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Курорты
+                    a(href="#!").footer__link Статьи
+                    a(href="#!").footer__link Новости
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Юридческая информация
+                    a(href="#!").footer__link Контакты
+                    a(href="#!").footer__link Сотрудничество
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Файлы cokies
+                    a(href="#!").footer__link Обработка персональных данных
+                    a(href="#!").footer__link Политика конфиденциальности
+                .footer__col 
+                    a(href="#!" title="google play").footer__app 
+                        img(src="@img/googleplay.png", alt="" draggable="false" loading="lazy")
+                    a(href="#!" title="app store").footer__app 
+                        img(src="@img/appstore.png", alt="" draggable="false" loading="lazy")
+            .footer__bot 
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.
+                p.footer__p На сайте размешено: 187 горнолыжных курорта, более 12986 отзывов
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.
+
+
+mixin footer()
+    +offer
+    footer.footer 
+        .footer__body.container 
+            .footer__top 
+                .footer__col 
+                    a(href="index.html" title="home page").footer__logo
+                        img(src="@img/logo-blue-squeare.svg", alt="" draggable="false")
+                        .footer__logo-info
+                            span.footer__logo-title Domainf.com
+                            span.footer__logo-p Все горнолыжные курорты мира в одном месте
+                    a(href="tel:+88001234567").footer__contact 
+                        img(src="@img/icon-phone.svg", alt="" loading="lazy" draggable="false")
+                        p +8 (800) 123-45-67
+                    a(href="mailto:info@domail.com").footer__contact 
+                        img(src="@img/icon-gmail.svg", alt="" loading="lazy" draggable="false")
+                        p info@domail.com
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Курорты
+                    a(href="#!").footer__link Статьи
+                    a(href="#!").footer__link Новости
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Юридческая информация
+                    a(href="#!").footer__link Контакты
+                    a(href="#!").footer__link Сотрудничество
+                .footer__col.footer__list 
+                    a(href="#!").footer__link Файлы cokies
+                    a(href="#!").footer__link Обработка персональных данных
+                    a(href="#!").footer__link Политика конфиденциальности
+                .footer__col 
+                    a(href="#!" title="google play").footer__app 
+                        img(src="@img/googleplay.png", alt="" draggable="false" loading="lazy")
+                    a(href="#!" title="app store").footer__app 
+                        img(src="@img/appstore.png", alt="" draggable="false" loading="lazy")
+            .footer__bot 
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.
+                p.footer__p На сайте размешено: 187 горнолыжных курорта, более 12986 отзывов
+                p.footer__p Copyright © 2022 Domain.com™. Все права защищены.

@@ -1,0 +1,18 @@
+include ../card 
+include ../pagination
+mixin favorites()
+    .favorites 
+        .favorites__body.container
+            .favorites__header 
+                h1.favorites__title.title_big Избранное 
+                include ../filter 
+                +filter 
+            .favorites__content.cards
+                +card('ДОМБАЙ', 1, 'h2', 'active')
+                +card('Роза хутор', 2, 'h2', 'active')
+                +card('ЧЕГЕТ', 3, 'h2', 'active')
+                +card('ДОМБАЙ', 1, 'h2', 'active')
+                +card('Роза хутор', 2, 'h2', 'active')
+                +card('ЧЕГЕТ', 3, 'h2', 'active')
+    +pagination
+

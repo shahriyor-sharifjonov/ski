@@ -1,0 +1,173 @@
+mixin menu(active)
+    .menu 
+        .menu__body.container 
+            .menu__row 
+                if active == 1
+                    a(href="#!").menu__item.active О курорте 
+                else
+                    a(href="resort.html").menu__item О курорте 
+                if active == 2
+                    a(href="#!").menu__item.active Веб-камеры 
+                else
+                    a(href="cameras.html").menu__item Веб-камеры 
+                if active == 3
+                    a(href="#!").menu__item.active Трассы 
+                else
+                    a(href="tracks.html").menu__item Трассы 
+                if active == 4
+                    a(href="#!").menu__item.active Отзывы 
+                else
+                    a(href="reviews.html").menu__item Отзывы 
+                if active == 5
+                    a(href="#!").menu__item.active Инструкторы 
+                else
+                    a(href="instruktors.html").menu__item Инструкторы 
+                if active == 6
+                    a(href="#!").menu__item.active Скайпасы 
+                else
+                    a(href="news.html").menu__item Скайпасы 
+            .menu__md
+                if active == 1
+                    button(type="button").menu__md-button О курорте 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 2
+                    button(type="button").menu__md-button Веб-камеры 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 3
+                    button(type="button").menu__md-button Трассы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 4
+                    button(type="button").menu__md-button Отзывы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 5
+                    button(type="button").menu__md-button Инструкторы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 6
+                    button(type="button").menu__md-button Скайпасы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+
+mixin menu2(active)
+    .menu 
+        .menu__body.container 
+            .menu__row 
+                a(href="resort.html").menu__item О курорте 
+                a(href="cameras.html").menu__item Веб-камеры 
+                a(href="tracks.html").menu__item Трассы 
+                a(href="reviews.html").menu__item Отзывы 
+                a(href="instruktors.html").menu__item Инструкторы 
+                a(href="news.html").menu__item Скайпасы 
+            .menu__md 
+                if active == 1
+                    button(type="button").menu__md-button О курорте 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 2
+                    button(type="button").menu__md-button Веб-камеры 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 3
+                    button(type="button").menu__md-button Трассы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 4
+                    button(type="button").menu__md-button Отзывы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 5
+                    button(type="button").menu__md-button Инструкторы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="news.html").menu__md-item Скайпасы 
+                if active == 6
+                    button(type="button").menu__md-button Скайпасы 
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
+                        </svg>
+                    .menu__md-content   
+                        a(href="resort.html").menu__md-item О курорте 
+                        a(href="cameras.html").menu__md-item Веб-камеры 
+                        a(href="tracks.html").menu__md-item Трассы 
+                        a(href="reviews.html").menu__md-item Отзывы 
+                        a(href="instruktors.html").menu__md-item Инструкторы 
