@@ -1828,6 +1828,10 @@
 .no-webp .videos {
   background: url(../img/videos__bg.png) center/cover no-repeat; }
 
+.videos {
+  margin-bottom: 16px;
+}
+
 .videos__title {
   margin-bottom: 18px;
 }
