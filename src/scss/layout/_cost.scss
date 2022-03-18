@@ -4,16 +4,15 @@
     &__title{
         margin-bottom: 49px;
         @include media(992){
-            margin-left: auto;
-            text-align: center;
-            margin-right: auto;
             max-width: 500px;
+            max-width: 100%;
         }
         @include media(576){
             margin-bottom: 33px;
-        }
-        @include media(576){
             max-width: 400px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
     &__content{
@@ -28,11 +27,10 @@
         }
         @include media(992){
             justify-content: space-between;
-            row-gap: 35px;
+            gap: 35px;
         }
         @include media(576){
             justify-content: center;
-            align-items: center;
         }
     }
     &__item{    
@@ -44,7 +42,7 @@
             max-width: 50% -25px;
         }
         @include media(992){
-            max-width: calc(50%);
+            max-width: calc(50% - 17.5px);
             width: 100%;
             justify-content: flex-start;
         }
