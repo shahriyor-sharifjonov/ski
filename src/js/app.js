@@ -277,3 +277,14 @@ document.querySelectorAll('.menu__md').forEach(el=>{
     btn.classList.toggle('active');
   })
 })
+
+document.querySelectorAll('.product__item').forEach(el => {
+  const favoriteBtn = el.querySelector('.favorite__btn');
+  const favoriteIcon = el.querySelector('.product__heart');
+  const productIcon = el.querySelector('.product__icon');
+  
+  favoriteBtn.addEventListener('click', (e)=>{
+    favoriteIcon.classList.toggle('active')
+    productIcon.classList.toggle('active')
+  })
+})

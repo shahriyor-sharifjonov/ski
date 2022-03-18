@@ -1,0 +1,63 @@
+mixin item()
+    .product__item  
+        .product__left 
+            a(href="#!").product__subtitle Роза хутор
+            p.product__p.product__desc Россия, Карачаево-Черкесия, п. Домбай
+                .product__rows
+                    .product__row 
+                        p.product__p Сезон
+                        p.product__p 10 декабря - 25 апреля
+                    .product__row 
+                        p.product__p Высота на уронем моря
+                        p.product__p 3 255 м
+                    .product__row 
+                        p.product__p Общая длина трасс
+                        p.product__p 13 255 м
+                    .product__row  
+                        p.product__p Сложность трасс
+                        .product__circles
+                            .product__circle.product__circle_black 
+                            .product__circle.product__circle_red  
+                            .product__circle.product__circle_green  
+                            .product__circle.product__circle_blue  
+                    .product__row 
+                        p.product__p Подъемники
+                        p.product__p 5 шт
+                    .product__row 
+                        p.product__p Отзывы
+                        p.product__p 1256 отзывов (#[a(href="reviews.html").product__a читать отзывы]) 
+        .product__right 
+            .product__img  
+                img(src="@img/cards-img.png", alt="" draggable="false" loading="lazy")
+            .product__abs 
+                a(href="#!").product__weather
+                    img(src="@img/icon-weather.svg", alt="" draggable="false" loading="lazy") 
+                    span +12 C
+                a(href="#!").product__rating  
+                    img(src="@img/card-star.svg", alt="" draggable="false" loading="lazy")
+                    span 4.9 (125 отзывов)
+            .product__buttons   
+                button(type="button").product__btn.favorite__btn Избранное  
+                    img(src="@img/love-icon.svg", alt="" draggable="false" loading="lazy").product__icon
+                    img(src="@img/icon-heart-white.svg", alt="").product__heart
+                a(href="#!").product__btn Посмотреть 
+                    img(src="@img/right-arrow.svg", alt="" draggable="false" loading="lazy")
+
+
+mixin product()
+    .product.section 
+        .product__body.container 
+            .product__top  
+                h2.product__title.title Найдено: 3 склона
+                include filter
+                +filter
+            .product__content 
+                +item
+                +item
+                +item
+                +item
+                +item
+                
+                        
+
+ 
