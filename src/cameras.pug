@@ -17,6 +17,47 @@ html(lang="ru")
                 +breadcrumbs(4, 'Курорты', 'Северный Кавказ', 'Россия', 'Домбай')
                 include components/menu
                 +menu(2)
+                .preview 
+                    .preview__row.container 
+                        .preview__col.preview__first
+                            h1.preview__title.title_big.camera__title веб-камеры на курорте <br>Боровской курган 
+                            include components/icons 
+                            +icons 
+                            .camera__body 
+                                p.camera__subtitle Онлайн трансляция с курорта и горнолыжных трасс
+                                p.camera__p Для просмотра онлайн камер Домбая, просто выберите местоположение камеры и нажмите на кнопку Play, видео загружается в потоковом режиме 
+                                .camera__content
+                                    .camera__item 
+                                        .camera__item-img
+                                            img(src="@img/camera.png", alt="" draggable="false" loading="lazy")
+                                            a(href="#!").camera__item-btn 
+                                                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g filter="url(#filter0_dd_148_3326)">
+                                                    <circle cx="40" cy="24" r="16" fill="#F3F4F6"/>
+                                                    </g>
+                                                    <path d="M45 22.2679C46.3333 23.0378 46.3333 24.9623 45 25.7321L39 29.1962C37.6667 29.966 36 29.0037 36 27.4641L36 20.5359C36 18.9963 37.6667 18.034 39 18.8038L45 22.2679Z" fill="#EF4444"/>
+                                                    <defs>
+                                                    <filter id="filter0_dd_148_3326" x="0" y="0" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                    <feOffset dy="16"/>
+                                                    <feGaussianBlur stdDeviation="12"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.188235 0 0 0 0 0.192157 0 0 0 0 0.2 0 0 0 0.1 0"/>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_148_3326"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                    <feOffset/>
+                                                    <feGaussianBlur stdDeviation="0.5"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.188235 0 0 0 0 0.192157 0 0 0 0 0.2 0 0 0 0.05 0"/>
+                                                    <feBlend mode="normal" in2="effect1_dropShadow_148_3326" result="effect2_dropShadow_148_3326"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_148_3326" result="shape"/>
+                                                    </filter>
+                                                    </defs>
+                                                </svg> 
+                                        p Камера на трассе в поселке Боровской курган
+                        .preview__col.preview__second 
+                            include components/icons 
+                            +icons 
+                            
             include components/menu
             +menu2(2)
             include components/footer 
