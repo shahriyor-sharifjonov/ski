@@ -1,6 +1,7 @@
 .reviews{
     &.bg{
         background: url('../img/reviews-bg.png') center / cover no-repeat;
+        margin-bottom: 16px;
     }
     .swiper{
         overflow: hidden;
@@ -46,11 +47,26 @@
             }
         }
     }
+    &__btn{
+        margin-left: auto;
+        margin-right: auto;
+        background: var(--primary);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 240px;
+        width: 100%;
+        height: 40px;
+        margin-top: 40px;
+        column-gap: 8px;
+    }
 }
 .review{
     box-shadow: 0px 2px 4px 0px #3031331A, 0px 0px 1px 0px #3031330D;
     padding: 32px 25px 23.5px 25px;
     transition: 300ms ease-out;
+    background: #fff;
     &:hover{
         box-shadow: 0px 0 15px 0px #3031331A, 0px 0px 1px 0px #3031330D;
     }

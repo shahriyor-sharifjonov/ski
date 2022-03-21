@@ -235,6 +235,24 @@ let reviews = new Swiper(".reviews__carousel", {
   },
 });
 
+
+let resort = new Swiper(".resort__slider-content", {
+  slidesPerView: "auto",
+  spaceBetween: 8,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.resort__slider-next',
+    prevEl: '.resort__slider-prev'
+  },
+  // breakpoints: {
+  //   576: {
+  //     slidesPerView: 4,
+  //   },
+  // },
+});
+
+
+
 $(document).ready(function() {
   $(".accordion-container > .accordion2 > .accordion__button").on("click", function() {
     if ($(this).hasClass("active")) {
@@ -288,3 +306,5 @@ document.querySelectorAll('.product__item').forEach(el => {
     productIcon.classList.toggle('active')
   })
 })
+
+

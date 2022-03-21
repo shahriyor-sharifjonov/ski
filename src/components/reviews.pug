@@ -81,3 +81,23 @@ mixin reviews()
                     +review(1) 
                     +review(2) 
             .reviews__pagination.swiper-pagination 
+
+mixin reviews2() 
+    .reviews.bg.section 
+        .reviews__body.container 
+            .reviews__header 
+                h2.reviews__title.title отзывы о боровском кургане
+                .reviews__action 
+                    .reviews__prev.swiper-button-prev 
+                    .reviews__next.swiper-button-next 
+            .reviews__carousel.swiper 
+                .swiper-wrapper 
+                    +review(1) 
+                    +review(2) 
+                    +review(1) 
+                    +review(2) 
+            .reviews__pagination.swiper-pagination 
+            a(href="reviews.html").reviews__btn Смотреть все отзывы
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5536 7.34138L10.0269 5.81776V5.81111C9.76024 5.54498 9.76024 5.12582 10.0269 4.86635C10.2869 4.60022 10.7069 4.60022 10.9736 4.86635L13.6402 7.52766C13.7975 7.68056 13.8596 7.89672 13.8267 8.10111C13.8011 8.2788 13.7045 8.4344 13.5667 8.53809L10.9664 11.1332C10.8398 11.2529 10.6664 11.3261 10.4931 11.3261L10.4998 11.3334C10.3198 11.3334 10.1464 11.2602 10.0264 11.1405C9.75978 10.881 9.75978 10.4552 10.0198 10.1957V10.1891L11.5398 8.67203H3.83341C3.46008 8.67203 3.16675 8.37264 3.16675 8.00671C3.16675 7.63412 3.46008 7.34138 3.83341 7.34138H11.5536Z" fill="white"/>
+                </svg>

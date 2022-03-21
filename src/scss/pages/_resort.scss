@@ -1,0 +1,163 @@
+.resort{
+    .preview__row{
+        gap: 32px;
+    }
+    &__top{
+        &-content{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 44px 42px;
+            @include media(576){
+                gap: 20px 20px;
+            }
+        }
+        &-item{
+            width: calc(50% - 21px);
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 16px;
+            @include media(576){
+                flex-direction: column;
+                width: calc(50% - 10px);
+            }
+            &-img{
+                width: 32px;
+                height: 32px;
+            }
+            &-title{
+                font-family: 'Oswald';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 120%;
+                text-transform: uppercase;
+                color: #1F2937;
+                margin-bottom: 6px;
+            }
+            &-p{
+                font-size: 14px;
+                line-height: 150%;
+                color: #374151;
+                a{
+                    text-decoration-line: underline;
+                    color: #1E40AF;
+                }
+            }
+        }
+    }
+    &__slider{
+        margin-top: 8px;
+        &-preview{
+            margin-bottom: 8px;
+            line-height: 0;
+            img{
+                width: 100%;
+                line-height: 0;
+            }
+        }
+        &-content{
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            .swiper{
+                &-wrapper{
+                    display: flex;
+                    width: max-content;
+                }
+                &-slide{
+                    width: auto;
+                    max-width: 120px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                &-button{
+                    &-next{
+                        background: url('../img/carousel-next.svg'), #ffffff75;
+                        background-size: 100% 100% !important;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    &-prev{
+                        background: url('../img/carousel-prev.svg'), #ffffff75;
+                        background-size: 100% 100% !important;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+        &-pagination{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+.acc{
+    background: #F9FAFB;
+    padding: 40px 0 72px 0;
+    &__item{
+        &:not(:last-of-type){
+            margin-bottom: 8px;
+        }
+        &-btn{
+            background: #FFFFFF;
+            box-shadow: 0px 0px 1px rgba(48, 49, 51, 0.05), 0px 2px 4px rgba(48, 49, 51, 0.1);
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 16px;
+            font-family: 'Oswald';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #2563EB;
+            cursor: pointer;
+            &.active{
+                svg{
+                    transform: rotate(-90deg);
+                }
+            }
+            svg{
+                transition: 300ms ease-out;
+            }
+        }
+        &-content{
+            display: none;
+            padding-top: 40px;
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 46px;
+    }
+    &__col{
+        width: calc(50% - 23px);
+    }
+    &__img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 150%;
+        color: #374151;
+        margin-bottom: 48px;
+    }
+}

@@ -6,6 +6,7 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(name="description", content="Domain.com - это сервис агрегатор всех горнолыжных курортов мира, здесь вы сможете найти полную информацию о каждом горнолыжном склоне, его протяженность, количество красных, черных, синих трасс. Можно подобрать самый удобный отель рядом с  подъемником. Перед поездкой мы рекомендуем сразу найти хорошего инструктора по горным лыжам, это позволит Вам не нарваться на мошенников, в нашей базе более 772 проверенных инструкторов, просто подайте заявку и мы подберем для вас инструктора по горным лыжам или сноуборду. Также на нашем сайте вы можете найти трансфер от аэропортов до отелей. ")
         link(rel="shortcut icon", href="@img/favicon.png", type="image/x-icon")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css")
         link(rel="stylesheet", href="css/style.min.css")
         title Все горнолыжные курорты мира в одном месте
     body  
@@ -17,13 +18,97 @@ html(lang="ru")
                 +breadcrumbs(4, 'Курорты', 'Северный Кавказ', 'Россия', 'Домбай')
                 include components/menu
                 +menu(1)
+                .preview.resort  
+                    .preview__row.container 
+                        .preview__col.preview__first
+                            h1.preview__title.title_big.camera__title Горнолыжный курорт <br>Боровской курган
+                            include components/icons 
+                            +icons 
+                            .camera__body 
+                                p.camera__p Престижный горный курорт Домбай (Домбайская поляна) расположился на территории Карачаево-Черкесской республики, у подножия Главного хребта Кавказских гор. Знаменитая Домбайская поляна является объектом Тебердинского государственного заповедника, площадь которого составляет 85 га. Находится поляна на высоте 1650 метров над уровнем моря. Центр этой живописной территории соединяют три ущелья: Алибек, Аманауз и Домбай-Ульген, которая считается наивысшей точкой курорта - 4046 м.
+                                .resort__top-content 
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-1.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title Сезон в боровском кургане
+                                            p.resort__top-item-p 12 - января - 16 апреля
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-2.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title Протяженность трасс
+                                            p.resort__top-item-p 5 км (#[a(href="tracks.html") смотреть карту])
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-3.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title максимальная высота
+                                            p.resort__top-item-p 5 256 метров
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-4.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title вебкамеры
+                                            p.resort__top-item-p 5 шт (#[a(href="cameras.html") смотреть камеры])
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-5.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title скайпасс
+                                            p.resort__top-item-p 1200-1300 рублей #[br](#[a(href="#!") купить онлайн])
+                                    .resort__top-item
+                                        .resort__top-item-img
+                                            img(src="@img/resort-top-6.svg", alt="" draggable="false" loading="lazy")
+                                        .resort__top-item-content 
+                                            p.resort__top-item-title отели боровского кургана
+                                            p.resort__top-item-p 1200-1300 рублей #[br](#[a(href="#!") подобрать отель])
+                        .preview__col.preview__second 
+                            include components/icons 
+                            +icons  
+                            .resort__slider 
+                                .resort__slider-preview 
+                                    img(src="@img/resort-1.png", alt="" draggable="false" loading="lazy")
+                                .resort__slider-content.swiper 
+                                    .swiper-wrapper 
+                                        .swiper-slide 
+                                            img(src="@img/resort-2.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-3.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-4.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                        .swiper-slide 
+                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
+                                    .resort__slider-pagination
+                                        .swiper-button-prev.resort__slider-prev
+                                        .swiper-button-next.resort__slider-next
                 include components/resort/comfort
-                +comfort
+                +comfort 
+                include components/resort/acc
+                +acc 
                 include components/resort/types
-                +types
+                +types 
+                include components/reviews
+                +reviews2 
             include components/menu
             +menu2(1)
             include components/footer 
             +footer 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
+        script(src="https://cdn.jsdelivr.net/npm/flatpickr") 
         script(src="js/app.js")  
+        script.
+            flatpickr("input[type='datetime-local']", {
+                enableTime: true,
+                dateFormat: "Y-m-d H:i",
+            }); 
