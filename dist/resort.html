@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Domain.com - это сервис агрегатор всех горнолыжных курортов мира, здесь вы сможете найти полную информацию о каждом горнолыжном склоне, его протяженность, количество красных, черных, синих трасс. Можно подобрать самый удобный отель рядом с  подъемником. Перед поездкой мы рекомендуем сразу найти хорошего инструктора по горным лыжам, это позволит Вам не нарваться на мошенников, в нашей базе более 772 проверенных инструкторов, просто подайте заявку и мы подберем для вас инструктора по горным лыжам или сноуборду. Также на нашем сайте вы можете найти трансфер от аэропортов до отелей. ">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css?_v=20220322003012">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220322003012">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css?_v=20220322204219">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220322204219">
     <title>Все горнолыжные курорты мира в одном месте</title>
   </head>
   <body> 
@@ -199,17 +199,12 @@
                               </div>
                             </div>
               <div class="resort__slider"> 
-                <div class="resort__slider-preview"> <picture><source srcset="img/resort-1.webp" type="image/webp"><img src="img/resort-1.png" alt="" draggable="false" loading="lazy"></picture></div>
+                <div class="resort__slider-preview"> <picture><source srcset="img/resort-1.webp" type="image/webp"><img src="img/resort-1.png" alt="" draggable="false"></picture></div>
                 <div class="resort__slider-content swiper"> 
                   <div class="swiper-wrapper"> 
                     <div class="swiper-slide"> <picture><source srcset="img/resort-2.webp" type="image/webp"><img src="img/resort-2.png" alt="" draggable="false" loading="lazy"></picture></div>
                     <div class="swiper-slide"> <picture><source srcset="img/resort-3.webp" type="image/webp"><img src="img/resort-3.png" alt="" draggable="false" loading="lazy"></picture></div>
                     <div class="swiper-slide"> <picture><source srcset="img/resort-4.webp" type="image/webp"><img src="img/resort-4.png" alt="" draggable="false" loading="lazy"></picture></div>
-                    <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
-                    <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
-                    <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
-                    <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
-                    <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
                     <div class="swiper-slide"> <picture><source srcset="img/resort-5.webp" type="image/webp"><img src="img/resort-5.png" alt="" draggable="false" loading="lazy"></picture></div>
                   </div>
                   <div class="resort__slider-pagination">
@@ -368,36 +363,189 @@
                             <form class="acc__form form" action=""> 
                               <div class="form__grid"> 
                                 <div class="form__item">
-                                  <label class="form__label">Как вас зовут</label>
-                                  <input class="form__input" type="text" required>
+                                  <label class="form__label" for="name-1">Как вас зовут</label>
+                                  <input class="form__input" type="text" required autocomplete="off" id="name-1">
                                 </div>
                                 <div class="form__item">
-                                  <label class="form__label">Ваш телефон</label>
-                                  <input class="form__input" type="tel" required id="tel-1">
+                                  <label class="form__label" for="tel-1">Ваш телефон</label>
+                                  <input class="form__input" type="tel" required autocomplete="off" id="tel-1">
                                 </div>
                                 <div class="form__item">
-                                  <label class="form__label">Удобная дата и время</label>
-                                  <input class="form__input" type="datetime-local" required id="date1">
+                                  <label class="form__label" for="date1">Удобная дата и время </label>
+                                  <input class="form__input" type="datetime-local" required autocomplete="off" id="date1">
                                   <div class="form__item-warning">
                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM12 7C12.5128 7 12.9355 7.38604 12.9933 7.88338L13 8V12C13 12.5523 12.5523 13 12 13C11.4872 13 11.0645 12.614 11.0067 12.1166L11 12V8C11 7.44772 11.4477 7 12 7ZM13.01 16C13.01 15.4477 12.5623 15 12.01 15L11.8834 15.0067C11.386 15.0645 11 15.4872 11 16C11 16.5523 11.4477 17 12 17L12.1266 16.9933C12.624 16.9355 13.01 16.5128 13.01 16Z" fill="#E11D48"/>
-</svg><span>Внимание: время местное!</span>
+</svg><span><b>Внимание:</b> время местное! </span>
                                   </div>
                                 </div>
                                 <div class="form__item">
-                                  <label class="form__label">Сколько будет человек</label>
-                                  <input class="form__input" type="number" required>
+                                  <label class="form__label" for="amount">Сколько будет человек</label>
+                                  <input class="form__input" type="number" required min="1" max="100" autocomplete="off" id="amount">
                                 </div>
                                 <div class="form__item form__item_chk"> 
-                                  <input type="checkbox" name="vesti" checked required id="vesti">
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="vesti">
                                   <label for="vesti">Нужно везти снаряжение </label>
                                 </div>
                                 <div class="form__item form__item_chk"> 
-                                  <input type="checkbox" name="vesti" checked required id="transfer">
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="transfer">
                                   <label for="transfer">Нужен обратный трансфер</label>
                                 </div>
                               </div>
-                              <button class="form__btn" type="submit">Найти трансфер</button>
+                              <button class="form__btn form__item" type="submit">Найти трансфер</button>
+                            </form>
+                          </div>
+                          <div class="acc__col"> 
+                            <div class="acc__img"><picture><source srcset="img/card-3.webp" type="image/webp"><img src="img/card-3.png" alt="" draggable="false" loading="lazy"></picture></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acc__item accordion">
+                      <div class="acc__item-btn accordion__button active">
+                        Билеты на самолет от Воронежа до Домбая<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5032 28.3333C17.0602 28.3358 16.6344 28.1619 16.3199 27.8499C15.6664 27.2017 15.662 26.1465 16.3102 25.4929C16.3134 25.4897 16.3167 25.4865 16.3199 25.4833L21.8366 19.9999L16.5366 14.4833L16.5366 14.4833C15.8904 13.8332 15.8904 12.7833 16.5366 12.1333L16.5366 12.1333C17.1848 11.4797 18.24 11.4754 18.8936 12.1236C18.8968 12.1268 18.9 12.13 18.9032 12.1333L25.3366 18.7999L25.3366 18.7999C25.9718 19.448 25.9718 20.4852 25.3366 21.1333L18.6699 27.7999C18.3677 28.1262 17.9477 28.3183 17.5032 28.3333L17.5032 28.3333Z" fill="#2563EB"/>
+</svg>
+                      </div>
+                      <div class="acc__item-content accordion__content">
+                        <div class="acc__row">
+                          <div class="acc__col">  
+                            <p class="acc__p">Для того чтобы добраться до горнолыжного склона в поселке Домбай Вам потребуется трансфер от города Минеральный воды, пожалуйста укажите Ваши контактные данные и даты в кототрые вам потребуется трансфер, и мы подберем для Вас проверенных перевозчиков</p>
+                            <form class="acc__form form" action=""> 
+                              <div class="form__grid"> 
+                                <div class="form__item">
+                                  <label class="form__label" for="name-1">Как вас зовут</label>
+                                  <input class="form__input" type="text" required autocomplete="off" id="name-1">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="tel-1">Ваш телефон</label>
+                                  <input class="form__input" type="tel" required autocomplete="off" id="tel-2">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="date1">Удобная дата и время </label>
+                                  <input class="form__input" type="datetime-local" required autocomplete="off" id="date1">
+                                  <div class="form__item-warning">
+                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM12 7C12.5128 7 12.9355 7.38604 12.9933 7.88338L13 8V12C13 12.5523 12.5523 13 12 13C11.4872 13 11.0645 12.614 11.0067 12.1166L11 12V8C11 7.44772 11.4477 7 12 7ZM13.01 16C13.01 15.4477 12.5623 15 12.01 15L11.8834 15.0067C11.386 15.0645 11 15.4872 11 16C11 16.5523 11.4477 17 12 17L12.1266 16.9933C12.624 16.9355 13.01 16.5128 13.01 16Z" fill="#E11D48"/>
+</svg><span><b>Внимание:</b> время местное! </span>
+                                  </div>
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="amount">Сколько будет человек</label>
+                                  <input class="form__input" type="number" required min="1" max="100" autocomplete="off" id="amount">
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="vesti">
+                                  <label for="vesti">Нужно везти снаряжение </label>
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="transfer">
+                                  <label for="transfer">Нужен обратный трансфер</label>
+                                </div>
+                              </div>
+                              <button class="form__btn form__item" type="submit">Найти трансфер</button>
+                            </form>
+                          </div>
+                          <div class="acc__col"> 
+                            <div class="acc__img"><picture><source srcset="img/card-3.webp" type="image/webp"><img src="img/card-3.png" alt="" draggable="false" loading="lazy"></picture></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acc__item accordion">
+                      <div class="acc__item-btn accordion__button active">
+                        Стоимость ЖД билетов от Воронежа до Домбая<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5032 28.3333C17.0602 28.3358 16.6344 28.1619 16.3199 27.8499C15.6664 27.2017 15.662 26.1465 16.3102 25.4929C16.3134 25.4897 16.3167 25.4865 16.3199 25.4833L21.8366 19.9999L16.5366 14.4833L16.5366 14.4833C15.8904 13.8332 15.8904 12.7833 16.5366 12.1333L16.5366 12.1333C17.1848 11.4797 18.24 11.4754 18.8936 12.1236C18.8968 12.1268 18.9 12.13 18.9032 12.1333L25.3366 18.7999L25.3366 18.7999C25.9718 19.448 25.9718 20.4852 25.3366 21.1333L18.6699 27.7999C18.3677 28.1262 17.9477 28.3183 17.5032 28.3333L17.5032 28.3333Z" fill="#2563EB"/>
+</svg>
+                      </div>
+                      <div class="acc__item-content accordion__content">
+                        <div class="acc__row">
+                          <div class="acc__col">  
+                            <p class="acc__p">Для того чтобы добраться до горнолыжного склона в поселке Домбай Вам потребуется трансфер от города Минеральный воды, пожалуйста укажите Ваши контактные данные и даты в кототрые вам потребуется трансфер, и мы подберем для Вас проверенных перевозчиков</p>
+                            <form class="acc__form form" action=""> 
+                              <div class="form__grid"> 
+                                <div class="form__item">
+                                  <label class="form__label" for="name-1">Как вас зовут</label>
+                                  <input class="form__input" type="text" required autocomplete="off" id="name-1">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="tel-1">Ваш телефон</label>
+                                  <input class="form__input" type="tel" required autocomplete="off" id="tel-3">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="date1">Удобная дата и время </label>
+                                  <input class="form__input" type="datetime-local" required autocomplete="off" id="date1">
+                                  <div class="form__item-warning">
+                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM12 7C12.5128 7 12.9355 7.38604 12.9933 7.88338L13 8V12C13 12.5523 12.5523 13 12 13C11.4872 13 11.0645 12.614 11.0067 12.1166L11 12V8C11 7.44772 11.4477 7 12 7ZM13.01 16C13.01 15.4477 12.5623 15 12.01 15L11.8834 15.0067C11.386 15.0645 11 15.4872 11 16C11 16.5523 11.4477 17 12 17L12.1266 16.9933C12.624 16.9355 13.01 16.5128 13.01 16Z" fill="#E11D48"/>
+</svg><span><b>Внимание:</b> время местное! </span>
+                                  </div>
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="amount">Сколько будет человек</label>
+                                  <input class="form__input" type="number" required min="1" max="100" autocomplete="off" id="amount">
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="vesti">
+                                  <label for="vesti">Нужно везти снаряжение </label>
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="transfer">
+                                  <label for="transfer">Нужен обратный трансфер</label>
+                                </div>
+                              </div>
+                              <button class="form__btn form__item" type="submit">Найти трансфер</button>
+                            </form>
+                          </div>
+                          <div class="acc__col"> 
+                            <div class="acc__img"><picture><source srcset="img/card-3.webp" type="image/webp"><img src="img/card-3.png" alt="" draggable="false" loading="lazy"></picture></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="acc__item accordion">
+                      <div class="acc__item-btn accordion__button active">
+                        Как доехать на автомобиле от Воронежа до Домбая<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.5032 28.3333C17.0602 28.3358 16.6344 28.1619 16.3199 27.8499C15.6664 27.2017 15.662 26.1465 16.3102 25.4929C16.3134 25.4897 16.3167 25.4865 16.3199 25.4833L21.8366 19.9999L16.5366 14.4833L16.5366 14.4833C15.8904 13.8332 15.8904 12.7833 16.5366 12.1333L16.5366 12.1333C17.1848 11.4797 18.24 11.4754 18.8936 12.1236C18.8968 12.1268 18.9 12.13 18.9032 12.1333L25.3366 18.7999L25.3366 18.7999C25.9718 19.448 25.9718 20.4852 25.3366 21.1333L18.6699 27.7999C18.3677 28.1262 17.9477 28.3183 17.5032 28.3333L17.5032 28.3333Z" fill="#2563EB"/>
+</svg>
+                      </div>
+                      <div class="acc__item-content accordion__content">
+                        <div class="acc__row">
+                          <div class="acc__col">  
+                            <p class="acc__p">Для того чтобы добраться до горнолыжного склона в поселке Домбай Вам потребуется трансфер от города Минеральный воды, пожалуйста укажите Ваши контактные данные и даты в кототрые вам потребуется трансфер, и мы подберем для Вас проверенных перевозчиков</p>
+                            <form class="acc__form form" action=""> 
+                              <div class="form__grid"> 
+                                <div class="form__item">
+                                  <label class="form__label" for="name-1">Как вас зовут</label>
+                                  <input class="form__input" type="text" required autocomplete="off" id="name-1">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="tel-1">Ваш телефон</label>
+                                  <input class="form__input" type="tel" required autocomplete="off" id="tel-4">
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="date1">Удобная дата и время </label>
+                                  <input class="form__input" type="datetime-local" required autocomplete="off" id="date1">
+                                  <div class="form__item-warning">
+                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12ZM20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12ZM12 7C12.5128 7 12.9355 7.38604 12.9933 7.88338L13 8V12C13 12.5523 12.5523 13 12 13C11.4872 13 11.0645 12.614 11.0067 12.1166L11 12V8C11 7.44772 11.4477 7 12 7ZM13.01 16C13.01 15.4477 12.5623 15 12.01 15L11.8834 15.0067C11.386 15.0645 11 15.4872 11 16C11 16.5523 11.4477 17 12 17L12.1266 16.9933C12.624 16.9355 13.01 16.5128 13.01 16Z" fill="#E11D48"/>
+</svg><span><b>Внимание:</b> время местное! </span>
+                                  </div>
+                                </div>
+                                <div class="form__item">
+                                  <label class="form__label" for="amount">Сколько будет человек</label>
+                                  <input class="form__input" type="number" required min="1" max="100" autocomplete="off" id="amount">
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="vesti">
+                                  <label for="vesti">Нужно везти снаряжение </label>
+                                </div>
+                                <div class="form__item form__item_chk"> 
+                                  <input type="checkbox" name="vesti" checked autocomplete="off" id="transfer">
+                                  <label for="transfer">Нужен обратный трансфер</label>
+                                </div>
+                              </div>
+                              <button class="form__btn form__item" type="submit">Найти трансфер</button>
                             </form>
                           </div>
                           <div class="acc__col"> 
@@ -711,13 +859,30 @@
               </div>
             </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220322003012"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr?_v=20220322003012"> </script>
-    <script src="js/app.js?_v=20220322003012"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220322204219"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr?_v=20220322204219"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js?_v=20220322204219"> </script>
+    <script src="js/app.js?_v=20220322204219"> </script>
     <script>
       flatpickr("input[type='datetime-local']", {
           enableTime: true,
           dateFormat: "Y-m-d H:i",
+          time_24hr: true,
+          allowInput: true,
+          disableMobile: "true",
+          onReady: function(selectedDates, dateStr, instance) {
+              let el = instance.element;
+              function preventInput(event) {
+                  event.preventDefault();
+                  return false;
+              };
+              el.onkeypress = el.onkeydown = el.onkeyup = preventInput;
+              el.onpaste = preventInput;
+              el.style.caretColor = 'transparent';
+              el.style.cursor = 'pointer';
+              el.style.color = '#585858';
+              el.style.backgroundColor = '#f7f7f7';
+          },
       }); 
     </script>
   </body>

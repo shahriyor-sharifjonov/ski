@@ -308,3 +308,45 @@ document.querySelectorAll('.product__item').forEach(el => {
 })
 
 
+document.querySelectorAll('.resort__slider').forEach(el => {
+  const preview = el.querySelector('.resort__slider-preview img');
+  const previewSource = el.querySelector('.resort__slider-preview source');
+  const slides = el.querySelectorAll('.swiper-slide');
+  slides.forEach(img => {
+    const slide = img.querySelector('img');
+    const source = img.querySelector('source');
+
+    function change(){
+      const src = slide.getAttribute('src');
+      const srcset = source.getAttribute('srcset');
+      const srcSource = source.getAttribute('src');
+      preview.setAttribute('src', src);
+      previewSource.setAttribute('srcset', srcset);
+      previewSource.setAttribute('src', srcSource);
+    }
+
+    slide.addEventListener('click', change)
+  })
+})
+
+
+var phoneMask = IMask(
+  document.getElementById('tel-1'), {
+      mask: '+{7}(000)000-00-00'
+  }
+);
+var phoneMask2 = IMask(
+  document.getElementById('tel-2'), {
+      mask: '+{7}(000)000-00-00'
+  }
+);
+var phoneMask3 = IMask(
+  document.getElementById('tel-3'), {
+      mask: '+{7}(000)000-00-00'
+  }
+);
+var phoneMask4 = IMask(
+  document.getElementById('tel-4'), {
+      mask: '+{7}(000)000-00-00'
+  }
+);

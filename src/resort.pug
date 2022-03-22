@@ -68,7 +68,7 @@ html(lang="ru")
                             +icons  
                             .resort__slider 
                                 .resort__slider-preview 
-                                    img(src="@img/resort-1.png", alt="" draggable="false" loading="lazy")
+                                    img(src="@img/resort-1.png", alt="" draggable="false")
                                 .resort__slider-content.swiper 
                                     .swiper-wrapper 
                                         .swiper-slide 
@@ -77,16 +77,6 @@ html(lang="ru")
                                             img(src="@img/resort-3.png", alt="" draggable="false" loading="lazy")
                                         .swiper-slide 
                                             img(src="@img/resort-4.png", alt="" draggable="false" loading="lazy")
-                                        .swiper-slide 
-                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
-                                        .swiper-slide 
-                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
-                                        .swiper-slide 
-                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
-                                        .swiper-slide 
-                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
-                                        .swiper-slide 
-                                            img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
                                         .swiper-slide 
                                             img(src="@img/resort-5.png", alt="" draggable="false" loading="lazy")
                                     .resort__slider-pagination
@@ -106,9 +96,26 @@ html(lang="ru")
             +footer 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
         script(src="https://cdn.jsdelivr.net/npm/flatpickr") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js") 
         script(src="js/app.js")  
         script.
             flatpickr("input[type='datetime-local']", {
                 enableTime: true,
                 dateFormat: "Y-m-d H:i",
+                time_24hr: true,
+                allowInput: true,
+                disableMobile: "true",
+                onReady: function(selectedDates, dateStr, instance) {
+                    let el = instance.element;
+                    function preventInput(event) {
+                        event.preventDefault();
+                        return false;
+                    };
+                    el.onkeypress = el.onkeydown = el.onkeyup = preventInput;
+                    el.onpaste = preventInput;
+                    el.style.caretColor = 'transparent';
+                    el.style.cursor = 'pointer';
+                    el.style.color = '#585858';
+                    el.style.backgroundColor = '#f7f7f7';
+                },
             }); 

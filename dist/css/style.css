@@ -3834,6 +3834,136 @@
   border-bottom: 1px solid #cecece;
 }
 
+.form__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+
+.form__item {
+  position: relative;
+  width: calc(50% - 16px);
+}
+
+.form__item:not(.form__item_chk) label {
+  position: absolute;
+  top: -11px;
+  left: 5px;
+  background: #f9fafb;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1F2937;
+  padding: 3px;
+}
+
+.form__item_chk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 7px;
+     -moz-column-gap: 7px;
+          column-gap: 7px;
+}
+
+.form__item_chk label {
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+}
+
+.form__item input:not([type=checkbox]) {
+  width: 100%;
+  height: 56px;
+  background: transparent;
+  border: 1px solid var(--primary);
+  padding: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1F2937;
+}
+
+.form__item-warning {
+  padding-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+}
+
+.form__item-warning b {
+  font-weight: 500;
+}
+
+.form__btn {
+  margin-top: 16px;
+  float: right;
+  height: 56px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid var(--primary);
+  position: relative;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked::before {
+  opacity: 1;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url("../img/checked.svg") center/100% 100% no-repeat;
+  width: 9px;
+  height: 8px;
+  opacity: 0;
+  -webkit-transition: 100ms ease-out;
+  -o-transition: 100ms ease-out;
+  transition: 100ms ease-out;
+}
+
+label {
+  cursor: pointer;
+}
+
 .flatpickr-calendar {
   background: transparent;
   opacity: 0;
@@ -5577,6 +5707,11 @@ span.flatpickr-weekday {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  pointer-events: none;
+}
+
+.resort__slider-pagination * {
+  pointer-events: all;
 }
 
 .acc {
@@ -5630,6 +5765,7 @@ span.flatpickr-weekday {
 .acc__item-content {
   display: none;
   padding-top: 40px;
+  padding-bottom: 64px;
 }
 
 .acc__row {
@@ -6254,6 +6390,21 @@ a {
     width: calc(50% - 16px);
   }
 
+  .acc__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .acc__col {
+    width: 100%;
+  }
+
+  .acc__img {
+    display: none;
+  }
+
   .rating__right {
     min-height: 0;
     -webkit-box-orient: horizontal;
@@ -6760,6 +6911,16 @@ a {
   .new__card-row {
     max-width: 100%;
   }
+
+  .acc__item-btn {
+    font-size: 16px;
+  }
+
+  .acc__item-btn svg {
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -7108,6 +7269,14 @@ a {
     font-size: 14px;
   }
 
+  .form__item {
+    width: 100%;
+  }
+
+  .form__btn {
+    margin-top: 32px;
+  }
+
   .news__item {
     width: 100%;
     -webkit-box-shadow: 0px 8px 16px 0px #3031331A, 0px 0px 1px 0px #3031330D;
@@ -7176,6 +7345,11 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: calc(50% - 10px);
+  }
+
+  .acc__item-content {
+    padding-top: 20px;
+    padding-bottom: 12px;
   }
 
   .section {
