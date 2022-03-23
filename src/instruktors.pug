@@ -18,10 +18,37 @@ html(lang="ru")
                 include components/menu
                 +menu(5)
                 .container
-                    form(action="#").form 
-                        .form__div 
-                            input(type="text").form__input 
-                            label.form__label Как вас зовут 
+                    .preview 
+                        .preview__row
+                            .preview__col.preview__first
+                                h1.title.title_big инструктора на курорте <br>Боровской курган
+                                include components/icons 
+                                +icons 
+                                p.camera__subtitle Заполните форму и мы подберем лучших инструкторов для Вас
+                                p.camera__p ВНИМАНИЕ! В на горнолыжном склоне участились случаи мошенников - лжеинструкторов, мы крайне рекомендуем обращаться только к проверенным инструкторам имеющих официальные документы и состоящих в ВАГИ.
+                                form(action="").acc__form.form 
+                                    .form__grid 
+                                        .form__item
+                                            label(for="name-1").form__label Как вас зовут
+                                            input(type="text" required autocomplete="off").form__input#name-1
+                                        .form__item
+                                            label(for="tel-1").form__label Ваш телефон
+                                            input(type="tel" required autocomplete="off").form__input#tel-1
+                                        .form__item
+                                            label(for="date1").form__label Удобная дата и время 
+                                            input(type="datetime-local" required autocomplete="off").form__input#date2
+                                        .form__item
+                                            label(for="amount").form__label Сколько будет человек
+                                            input(type="number" required min="1" max="100" autocomplete="off").form__input#amount
+                                        .form__item.form__item_chk 
+                                            input(type="checkbox", name="child" checked autocomplete="off")#child
+                                            label(for="child") Обучение ребенка
+                                        button(type="submit").form__btn.form__item.instruktors__btn Найти трансфер
+                            .preview__col.preview__second
+                                include components/icons 
+                                +icons 
+                                .instruktors__img 
+                                    img(src="@img/resort-1.png", alt="" draggable="false")
                 include components/instruktors/cost 
                 +cost 
                 include components/instruktors/why 
@@ -31,4 +58,32 @@ html(lang="ru")
             include components/footer 
             +footer 
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js") 
-        script(src="js/app.js")  
+        script(src="https://cdn.jsdelivr.net/npm/flatpickr") 
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.2/imask.min.js") 
+        script(src="js/app.js")
+        script. 
+            var phoneMask = IMask(
+                document.getElementById('tel-1'), {
+                    mask: '+{7}(000)000-00-00'
+                }
+            );
+            flatpickr("input[type='datetime-local']", {
+                enableTime: true,
+                dateFormat: "Y-m-d H:i",
+                time_24hr: true,
+                allowInput: true,
+                disableMobile: "true",
+                onReady: function(selectedDates, dateStr, instance) {
+                    let el = instance.element;
+                    function preventInput(event) {
+                        event.preventDefault();
+                        return false;
+                    };
+                    el.onkeypress = el.onkeydown = el.onkeyup = preventInput;
+                    el.onpaste = preventInput;
+                    el.style.caretColor = 'transparent';
+                    el.style.cursor = 'pointer';
+                    el.style.color = '#585858';
+                    el.style.backgroundColor = '#ffffff';
+                },
+            }); 

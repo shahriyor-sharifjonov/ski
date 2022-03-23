@@ -108,21 +108,21 @@ mixin acc()
                                     .form__item.form__item_chk 
                                         input(type="checkbox", name="vesti" checked autocomplete="off")#vesti
                                         label(for="vesti") Нужно везти снаряжение 
-                                    .form__item.form__item_chk  
-                                        input(type="checkbox", name="vesti" checked autocomplete="off")#transfer
-                                        label(for="transfer") Нужен обратный трансфер
-                                button(type="submit").form__btn.form__item Найти трансфер
+                                    .form__item.form__item_chk 
+                                        input(type="checkbox", name="vesti" checked autocomplete="off")#transfer 
+                                        label(for="transfer") Нужен обратный трансфер 
+                                button(type="submit").form__btn.form__item Найти трансфер 
                         .acc__col 
-                            .acc__img
-                                img(src="@img/card-3.png", alt="" draggable="false" loading="lazy")
-            .acc__item.accordion
-                .acc__item-btn.accordion__button.active Как доехать на автомобиле от Воронежа до Домбая
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            .acc__img 
+                                img(src="@img/card-3.png", alt="" draggable="false" loading="lazy") 
+            .acc__item.accordion 
+                .acc__item-btn.accordion__button.active Как доехать на автомобиле от Воронежа до Домбая 
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"> 
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5032 28.3333C17.0602 28.3358 16.6344 28.1619 16.3199 27.8499C15.6664 27.2017 15.662 26.1465 16.3102 25.4929C16.3134 25.4897 16.3167 25.4865 16.3199 25.4833L21.8366 19.9999L16.5366 14.4833L16.5366 14.4833C15.8904 13.8332 15.8904 12.7833 16.5366 12.1333L16.5366 12.1333C17.1848 11.4797 18.24 11.4754 18.8936 12.1236C18.8968 12.1268 18.9 12.13 18.9032 12.1333L25.3366 18.7999L25.3366 18.7999C25.9718 19.448 25.9718 20.4852 25.3366 21.1333L18.6699 27.7999C18.3677 28.1262 17.9477 28.3183 17.5032 28.3333L17.5032 28.3333Z" fill="#2563EB"/>
-                    </svg>
-                .acc__item-content.accordion__content
-                    .acc__row
-                        .acc__col   
+                    </svg> 
+                .acc__item-content.accordion__content 
+                    .acc__row 
+                        .acc__col 
                             p.acc__p Для того чтобы добраться до горнолыжного склона в поселке Домбай Вам потребуется трансфер от города Минеральный воды, пожалуйста укажите Ваши контактные данные и даты в кототрые вам потребуется трансфер, и мы подберем для Вас проверенных перевозчиков
                             form(action="").acc__form.form 
                                 .form__grid 
@@ -131,7 +131,7 @@ mixin acc()
                                         input(type="text" required autocomplete="off").form__input#name-1
                                     .form__item
                                         label(for="tel-1").form__label Ваш телефон
-                                        input(type="tel" required autocomplete="off").form__input#tel-4
+                                        input(type="tel" required autocomplete="off").form__input#tel-1
                                     .form__item
                                         label(for="date1").form__label Удобная дата и время 
                                         input(type="datetime-local" required autocomplete="off").form__input#date1 

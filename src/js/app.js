@@ -329,24 +329,3 @@ document.querySelectorAll('.resort__slider').forEach(el => {
   })
 })
 
-
-var phoneMask = IMask(
-  document.getElementById('tel-1'), {
-      mask: '+{7}(000)000-00-00'
-  }
-);
-var phoneMask2 = IMask(
-  document.getElementById('tel-2'), {
-      mask: '+{7}(000)000-00-00'
-  }
-);
-var phoneMask3 = IMask(
-  document.getElementById('tel-3'), {
-      mask: '+{7}(000)000-00-00'
-  }
-);
-var phoneMask4 = IMask(
-  document.getElementById('tel-4'), {
-      mask: '+{7}(000)000-00-00'
-  }
-);
