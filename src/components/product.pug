@@ -45,8 +45,8 @@ mixin item()
 
 
 mixin product()
-    .product.section 
-        .product__body.container 
+    .product 
+        .product__body 
             .product__top  
                 h2.product__title.title Найдено: 3 склона
                 include filter
@@ -57,6 +57,8 @@ mixin product()
                 +item
                 +item
                 +item
+            include pagination
+            +pagination
                 
                         
 

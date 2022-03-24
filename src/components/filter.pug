@@ -7,3 +7,58 @@ mixin filter()
             li.dropdown__list-item.dropdown__list-item_active(data-value="По популярности") По популярности
             li.dropdown__list-item(data-value="По Алфавитом") По алфавитом
         input(type="text" name="lang" value="По популярности").dropdown__input_hidden
+
+
+
+
+mixin filter2()
+    .filter.dropdown  
+        button(type="button").dropdown__button #[span Россия]
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB")
+        ul.dropdown__list 
+            li.dropdown__list-item.dropdown__list-item_active(data-value="Россия") Россия
+            li.dropdown__list-item(data-value="Китай") Китай
+            li.dropdown__list-item(data-value="Ангола") Ангола
+            li.dropdown__list-item(data-value="Франция") Франция
+            li.dropdown__list-item(data-value="Германия") Германия
+            li.dropdown__list-item(data-value="Тайланд") Тайланд
+        input(type="text" name="country" value="Россия").dropdown__input_hidden
+
+
+
+mixin filter3()
+    .filter.dropdown  
+        button(type="button").dropdown__button #[span Воронежская]
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB")
+        ul.dropdown__list 
+            li.dropdown__list-item.dropdown__list-item_active(data-value="Воронежская") Воронежская
+            li.dropdown__list-item(data-value="Китай") Китай
+            li.dropdown__list-item(data-value="Ангола") Ангола
+            li.dropdown__list-item(data-value="Франция") Франция
+            li.dropdown__list-item(data-value="Германия") Германия
+            li.dropdown__list-item(data-value="Тайланд") Тайланд
+        input(type="text" name="country" value="Воронежская").dropdown__input_hidden
+
+
+
+mixin filter4() 
+    .filter.dropdown  
+        button(type="button").dropdown__button #[span Апрель]
+            svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB")
+        ul.dropdown__list 
+            li.dropdown__list-item(data-value="Январь") Январь 
+            li.dropdown__list-item(data-value="Февраль") Февраль
+            li.dropdown__list-item(data-value="Март") Март
+            li.dropdown__list-item.dropdown__list-item_active(data-value="Апрель") Апрель
+            li.dropdown__list-item(data-value="Май") Май
+            li.dropdown__list-item(data-value="Июнь") Июнь
+            li.dropdown__list-item(data-value="Июль") Июль
+            li.dropdown__list-item(data-value="Августь") Августь
+            li.dropdown__list-item(data-value="Сентябрь") Сентябрь
+            li.dropdown__list-item(data-value="Октябрь") Октябрь
+            li.dropdown__list-item(data-value="Ноябрь") Ноябрь
+            li.dropdown__list-item(data-value="Декабрь") Декабрь
+        input(type="text" name="country" value="Апрель").dropdown__input_hidden

@@ -235,6 +235,25 @@ let reviews = new Swiper(".reviews__carousel", {
   },
 });
 
+let tracks = new Swiper(".tracks__slider", {
+  slidesPerView: 2,
+  spaceBetween: 15,
+  modules: [Navigation],
+  navigation: {
+    nextEl: '.tracks__slider-next',
+    prevEl: '.tracks__slider-prev'
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 6,
+      spaceBetween: 32
+    },
+  },
+});
+
 
 let resort = new Swiper(".resort__slider-content", {
   slidesPerView: "auto",

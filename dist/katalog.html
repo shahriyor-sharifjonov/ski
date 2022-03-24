@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Domain.com - это сервис агрегатор всех горнолыжных курортов мира, здесь вы сможете найти полную информацию о каждом горнолыжном склоне, его протяженность, количество красных, черных, синих трасс. Можно подобрать самый удобный отель рядом с  подъемником. Перед поездкой мы рекомендуем сразу найти хорошего инструктора по горным лыжам, это позволит Вам не нарваться на мошенников, в нашей базе более 772 проверенных инструкторов, просто подайте заявку и мы подберем для вас инструктора по горным лыжам или сноуборду. Также на нашем сайте вы можете найти трансфер от аэропортов до отелей. ">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220323113226">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220323173448">
     <title>Все горнолыжные курорты мира в одном месте</title>
   </head>
   <body> 
@@ -94,261 +94,431 @@
                     </div>
                   </div>
                 </div>
-                <div class="product section"> 
-                  <div class="product__body container"> 
-                    <div class="product__top"> 
-                      <h2 class="product__title title">Найдено: 3 склона</h2>
+        <div class="katalog">   
+          <div class="katalog__body container accordion-container">
+            <div class="katalog__sidebar accordion"> 
+              <p class="katalog__sidebar-title accordion__button active">Поиск по курортам</p>
+              <div class="accordion__content" style="display: block">
+                <p class="katalog__sidebar-subtitle">Активные фильтры:</p>
+                <div class="katalog__sidebar-filter"> 
+                  <button class="katalog__sidebar-filter-item" type="button">
+                    Россия <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                  </button>
+                  <button class="katalog__sidebar-filter-item" type="button">
+                    Воронежская область<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                  </button>
+                  <button class="katalog__sidebar-filter-item" type="button">
+                    Апрель <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                  </button>
+                  <button class="katalog__sidebar-filter-item" type="button">
+                    Черные <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                  </button>
+                  <button class="katalog__sidebar-filter-item" type="button">
+                    Синие <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                  </button>
+                </div>
+                <button class="katalog__sidebar-filter-reset" type="button">
+                  Сбросить все фильтры <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.94094 7.99996L11.8076 5.13996V5.13996C12.069 4.87854 12.069 4.4547 11.8076 4.19329C11.5462 3.93188 11.1223 3.93188 10.8609 4.19329L8.00094 7.05996L5.14094 4.19329L5.14094 4.19329C4.87952 3.93188 4.45568 3.93188 4.19427 4.19329C3.93285 4.45471 3.93285 4.87854 4.19427 5.13996V5.13996L7.06094 7.99996L4.19427 10.86V10.86C3.93285 11.1192 3.93112 11.5413 4.1904 11.8028C4.19169 11.8041 4.19298 11.8053 4.19427 11.8066H4.19427C4.45355 12.068 4.87566 12.0698 5.13707 11.8105C5.13836 11.8092 5.13965 11.8079 5.14093 11.8066L8.00093 8.93996L10.8609 11.8066V11.8066C11.1202 12.068 11.5423 12.0698 11.8037 11.8105C11.805 11.8092 11.8063 11.8079 11.8076 11.8066V11.8066C12.069 11.5473 12.0707 11.1252 11.8115 10.8638C11.8102 10.8625 11.8089 10.8612 11.8076 10.86L8.94094 7.99996Z" fill="#DC2626"/>
+</svg>
+                </button>
+                <p class="katalog__sidebar-subtitle">Где планируете кататься:</p>
+                <div class="katalog__sidebar-item"> 
+                  <p class="katalog__sidebar-label">Название курорта: </p>
+                  <div class="intro__search">
+                                        <div class="search katalog__search"> 
+                                          <form class="search__content" action="#!"> 
+                                            <input type="text" placeholder="Поиск по названию">
+                                            <button class="search__button" type="submit" title="search"> 
+                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z" fill="#2563EB"></path>
+                                              </svg>
+                                            </button>
+                                            <div class="search__list">
+                                              <ul class="search__list-content" role="listbox">
+                                                <li class="search__list-item active" role="presentation"> <span class="search__list-name">Абзаково</span><span class="search__list-distance">8 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Авальман</span><span class="search__list-distance">18 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Аджигардак</span><span class="search__list-distance">5 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Ак-Йорт</span><span class="search__list-distance">8 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Алпатьево</span><span class="search__list-distance">8 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Альбатрос</span><span class="search__list-distance">18 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Армхи</span><span class="search__list-distance">5 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Арсгора</span><span class="search__list-distance">8 трасс (всего 52 км)</span></li>
+                                                <li class="search__list-item" role="presentation"> <span class="search__list-name">Архыз</span><span class="search__list-distance">12 трасс (всего 30 км)</span></li>
+                                              </ul>
+                                            </div>
+                                          </form>
+                                          <button class="search__toggle" type="button" title="search"> 
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C11.8487 18 13.551 17.3729 14.9056 16.3199L20.2929 21.7071L20.3871 21.7903C20.7794 22.0953 21.3466 22.0676 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L16.3199 14.9056C17.3729 13.551 18 11.8487 18 10C18 5.58172 14.4183 2 10 2ZM10 4C13.3137 4 16 6.68629 16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4Z"></path>
+                                            </svg>
+                                          </button>
+                                        </div>
+                  </div>
+                </div>
+                <div class="katalog__sidebar-item"> 
+                  <p class="katalog__sidebar-label">Страна:</p>
                                     <div class="filter dropdown"> 
-                                      <button class="dropdown__button" type="button"><span>По популярности</span>
+                                      <button class="dropdown__button" type="button"><span>Россия</span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                           <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB"></path>
                                         </svg>
                                       </button>
                                       <ul class="dropdown__list"> 
-                                        <li class="dropdown__list-item dropdown__list-item_active" data-value="По популярности">По популярности</li>
-                                        <li class="dropdown__list-item" data-value="По Алфавитом">По алфавитом</li>
+                                        <li class="dropdown__list-item dropdown__list-item_active" data-value="Россия">Россия</li>
+                                        <li class="dropdown__list-item" data-value="Китай">Китай</li>
+                                        <li class="dropdown__list-item" data-value="Ангола">Ангола</li>
+                                        <li class="dropdown__list-item" data-value="Франция">Франция</li>
+                                        <li class="dropdown__list-item" data-value="Германия">Германия</li>
+                                        <li class="dropdown__list-item" data-value="Тайланд">Тайланд</li>
                                       </ul>
-                                      <input class="dropdown__input_hidden" type="text" name="lang" value="По популярности">
+                                      <input class="dropdown__input_hidden" type="text" name="country" value="Россия">
                                     </div>
-                    </div>
-                    <div class="product__content"> 
-                              <div class="product__item"> 
-                                <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
-                                  <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
-                                    <div class="product__rows">
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сезон</p>
-                                        <p class="product__p">10 декабря - 25 апреля</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Высота на уронем моря</p>
-                                        <p class="product__p">3 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Общая длина трасс</p>
-                                        <p class="product__p">13 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сложность трасс</p>
-                                        <div class="product__circles">
-                                          <div class="product__circle product__circle_black"> </div>
-                                          <div class="product__circle product__circle_red"> </div>
-                                          <div class="product__circle product__circle_green"> </div>
-                                          <div class="product__circle product__circle_blue"> </div>
-                                        </div>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Подъемники</p>
-                                        <p class="product__p">5 шт</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Отзывы</p>
-                                        <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
-                                      </div>
+                </div>
+                <div class="katalog__sidebar-item"> 
+                  <p class="katalog__sidebar-label">Область:</p>
+                                    <div class="filter dropdown"> 
+                                      <button class="dropdown__button" type="button"><span>Воронежская</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB"></path>
+                                        </svg>
+                                      </button>
+                                      <ul class="dropdown__list"> 
+                                        <li class="dropdown__list-item dropdown__list-item_active" data-value="Воронежская">Воронежская</li>
+                                        <li class="dropdown__list-item" data-value="Китай">Китай</li>
+                                        <li class="dropdown__list-item" data-value="Ангола">Ангола</li>
+                                        <li class="dropdown__list-item" data-value="Франция">Франция</li>
+                                        <li class="dropdown__list-item" data-value="Германия">Германия</li>
+                                        <li class="dropdown__list-item" data-value="Тайланд">Тайланд</li>
+                                      </ul>
+                                      <input class="dropdown__input_hidden" type="text" name="country" value="Воронежская">
                                     </div>
-                                  </p>
-                                </div>
-                                <div class="product__right"> 
-                                  <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
-                                  <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
-                                  <div class="product__buttons">  
-                                    <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product__item"> 
-                                <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
-                                  <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
-                                    <div class="product__rows">
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сезон</p>
-                                        <p class="product__p">10 декабря - 25 апреля</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Высота на уронем моря</p>
-                                        <p class="product__p">3 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Общая длина трасс</p>
-                                        <p class="product__p">13 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сложность трасс</p>
-                                        <div class="product__circles">
-                                          <div class="product__circle product__circle_black"> </div>
-                                          <div class="product__circle product__circle_red"> </div>
-                                          <div class="product__circle product__circle_green"> </div>
-                                          <div class="product__circle product__circle_blue"> </div>
-                                        </div>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Подъемники</p>
-                                        <p class="product__p">5 шт</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Отзывы</p>
-                                        <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
-                                      </div>
+                </div>
+                <div class="katalog__sidebar-item"> 
+                  <p class="katalog__sidebar-label">Период поездки:</p>
+                                    <div class="filter dropdown"> 
+                                      <button class="dropdown__button" type="button"><span>Апрель</span>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB"></path>
+                                        </svg>
+                                      </button>
+                                      <ul class="dropdown__list"> 
+                                        <li class="dropdown__list-item" data-value="Январь">Январь </li>
+                                        <li class="dropdown__list-item" data-value="Февраль">Февраль</li>
+                                        <li class="dropdown__list-item" data-value="Март">Март</li>
+                                        <li class="dropdown__list-item dropdown__list-item_active" data-value="Апрель">Апрель</li>
+                                        <li class="dropdown__list-item" data-value="Май">Май</li>
+                                        <li class="dropdown__list-item" data-value="Июнь">Июнь</li>
+                                        <li class="dropdown__list-item" data-value="Июль">Июль</li>
+                                        <li class="dropdown__list-item" data-value="Августь">Августь</li>
+                                        <li class="dropdown__list-item" data-value="Сентябрь">Сентябрь</li>
+                                        <li class="dropdown__list-item" data-value="Октябрь">Октябрь</li>
+                                        <li class="dropdown__list-item" data-value="Ноябрь">Ноябрь</li>
+                                        <li class="dropdown__list-item" data-value="Декабрь">Декабрь</li>
+                                      </ul>
+                                      <input class="dropdown__input_hidden" type="text" name="country" value="Апрель">
                                     </div>
-                                  </p>
-                                </div>
-                                <div class="product__right"> 
-                                  <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
-                                  <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
-                                  <div class="product__buttons">  
-                                    <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product__item"> 
-                                <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
-                                  <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
-                                    <div class="product__rows">
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сезон</p>
-                                        <p class="product__p">10 декабря - 25 апреля</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Высота на уронем моря</p>
-                                        <p class="product__p">3 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Общая длина трасс</p>
-                                        <p class="product__p">13 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сложность трасс</p>
-                                        <div class="product__circles">
-                                          <div class="product__circle product__circle_black"> </div>
-                                          <div class="product__circle product__circle_red"> </div>
-                                          <div class="product__circle product__circle_green"> </div>
-                                          <div class="product__circle product__circle_blue"> </div>
-                                        </div>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Подъемники</p>
-                                        <p class="product__p">5 шт</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Отзывы</p>
-                                        <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
-                                      </div>
-                                    </div>
-                                  </p>
-                                </div>
-                                <div class="product__right"> 
-                                  <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
-                                  <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
-                                  <div class="product__buttons">  
-                                    <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product__item"> 
-                                <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
-                                  <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
-                                    <div class="product__rows">
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сезон</p>
-                                        <p class="product__p">10 декабря - 25 апреля</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Высота на уронем моря</p>
-                                        <p class="product__p">3 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Общая длина трасс</p>
-                                        <p class="product__p">13 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сложность трасс</p>
-                                        <div class="product__circles">
-                                          <div class="product__circle product__circle_black"> </div>
-                                          <div class="product__circle product__circle_red"> </div>
-                                          <div class="product__circle product__circle_green"> </div>
-                                          <div class="product__circle product__circle_blue"> </div>
-                                        </div>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Подъемники</p>
-                                        <p class="product__p">5 шт</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Отзывы</p>
-                                        <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
-                                      </div>
-                                    </div>
-                                  </p>
-                                </div>
-                                <div class="product__right"> 
-                                  <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
-                                  <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
-                                  <div class="product__buttons">  
-                                    <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="product__item"> 
-                                <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
-                                  <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
-                                    <div class="product__rows">
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сезон</p>
-                                        <p class="product__p">10 декабря - 25 апреля</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Высота на уронем моря</p>
-                                        <p class="product__p">3 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Общая длина трасс</p>
-                                        <p class="product__p">13 255 м</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Сложность трасс</p>
-                                        <div class="product__circles">
-                                          <div class="product__circle product__circle_black"> </div>
-                                          <div class="product__circle product__circle_red"> </div>
-                                          <div class="product__circle product__circle_green"> </div>
-                                          <div class="product__circle product__circle_blue"> </div>
-                                        </div>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Подъемники</p>
-                                        <p class="product__p">5 шт</p>
-                                      </div>
-                                      <div class="product__row"> 
-                                        <p class="product__p">Отзывы</p>
-                                        <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
-                                      </div>
-                                    </div>
-                                  </p>
-                                </div>
-                                <div class="product__right"> 
-                                  <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
-                                  <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
-                                  <div class="product__buttons">  
-                                    <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
-                                  </div>
-                                </div>
-                              </div>
-                    </div>
+                </div>
+                <div>
+                  <p class="katalog__sidebar-subtitle">Интересуют трассы:</p>
+                  <div class="katalog__sidebar-chk"> 
+                    <input type="checkbox" checked id="black">
+                    <label for="black">Черные трассы </label>
+                  </div>
+                  <div class="katalog__sidebar-chk"> 
+                    <input type="checkbox" id="red">
+                    <label for="red">Красные трассы </label>
+                  </div>
+                  <div class="katalog__sidebar-chk disabled"> 
+                    <input type="checkbox" disabled checked id="green">
+                    <label for="green">Зеленые трассы </label>
+                  </div>
+                  <div class="katalog__sidebar-chk"> 
+                    <input type="checkbox" id="blue">
+                    <label for="blue">Синие трассы </label>
                   </div>
                 </div>
-      </main>
-            <div class="menu"> 
-              <div class="menu__body container"> 
-                <div class="menu__row"> <a class="menu__item" href="resort.html">О курорте </a><a class="menu__item" href="cameras.html">Веб-камеры </a><a class="menu__item" href="tracks.html">Трассы </a><a class="menu__item" href="reviews.html">Отзывы </a><a class="menu__item" href="instruktors.html">Инструкторы </a><a class="menu__item" href="news.html">Скайпасы </a></div>
-                <div class="menu__md"> 
-                  <button class="menu__md-button" type="button">
-                    Трассы <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M11.6669 17.5031V17.5031C11.6643 17.0601 11.8382 16.6343 12.1502 16.3198V16.3198C12.7984 15.6662 13.8537 15.6619 14.5072 16.3101C14.5104 16.3133 14.5137 16.3165 14.5169 16.3198L20.0002 21.8364L25.5169 16.5364L25.5169 16.5364C26.1669 15.8902 27.2168 15.8902 27.8669 16.5364L27.8669 16.5364C28.5204 17.1846 28.5247 18.2399 27.8765 18.8934C27.8733 18.8967 27.8701 18.8999 27.8669 18.9031L21.2002 25.3364L21.2002 25.3364C20.5521 25.9717 19.5149 25.9717 18.8669 25.3364L12.2002 18.6698V18.6698C11.8739 18.3676 11.6819 17.9476 11.6669 17.5031L11.6669 17.5031Z" fill="white"/>
-</svg>
-                  </button>
-                  <div class="menu__md-content">  <a class="menu__md-item" href="resort.html">О курорте </a><a class="menu__md-item" href="cameras.html">Веб-камеры </a><a class="menu__md-item" href="reviews.html">Отзывы </a><a class="menu__md-item" href="instruktors.html">Инструкторы </a><a class="menu__md-item" href="news.html">Скайпасы </a></div>
+                <div>
+                  <p class="katalog__sidebar-subtitle">Особенности курортов:</p>
+                  <div class="katalog__sidebar-chk"> 
+                    <input type="checkbox" checked id="freeride">
+                    <label for="freeride">Фрирайд</label>
+                  </div>
+                  <div class="katalog__sidebar-chk"> 
+                    <input type="checkbox" id="snoupark">
+                    <label for="snoupark">Сноупарк</label>
+                  </div>
                 </div>
+                <button class="katalog__sidebar-btn" type="button">
+                  Поиск курорта<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.5538 7.34132L10.0271 5.8177V5.81105C9.76048 5.54492 9.76048 5.12576 10.0271 4.86629C10.2871 4.60015 10.7071 4.60015 10.9738 4.86629L13.6405 7.5276C13.7977 7.6805 13.8599 7.89666 13.8269 8.10105C13.8013 8.27873 13.7047 8.43434 13.567 8.53803L10.9667 11.1331C10.84 11.2529 10.6667 11.326 10.4934 11.326L10.5 11.3334C10.32 11.3334 10.1467 11.2602 10.0267 11.1404C9.76002 10.8809 9.76002 10.4551 10.02 10.1956V10.189L11.5401 8.67197H3.83366C3.46033 8.67197 3.16699 8.37258 3.16699 8.00665C3.16699 7.63406 3.46033 7.34132 3.83366 7.34132H11.5538Z" fill="white"/>
+</svg>
+                </button>
               </div>
             </div>
+                        <div class="product"> 
+                          <div class="product__body"> 
+                            <div class="product__top"> 
+                              <h2 class="product__title title">Найдено: 3 склона</h2>
+                                                <div class="filter dropdown"> 
+                                                  <button class="dropdown__button" type="button"><span>По популярности</span>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0002 15.5V15.5C11.7344 15.5015 11.4789 15.3972 11.2902 15.21L7.29019 11.21V11.21C6.89806 10.8179 6.89806 10.1821 7.29019 9.79C7.68231 9.39788 8.31807 9.39788 8.71019 9.79L12.0002 13.1L15.3002 9.92V9.92C15.6695 9.50935 16.3018 9.47584 16.7124 9.84514C17.1231 10.2145 17.1566 10.8467 16.7873 11.2574C16.7542 11.2942 16.7184 11.3285 16.6802 11.36L12.6802 15.22V15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5L12.0002 15.5Z" fill="#2563EB"></path>
+                                                    </svg>
+                                                  </button>
+                                                  <ul class="dropdown__list"> 
+                                                    <li class="dropdown__list-item dropdown__list-item_active" data-value="По популярности">По популярности</li>
+                                                    <li class="dropdown__list-item" data-value="По Алфавитом">По алфавитом</li>
+                                                  </ul>
+                                                  <input class="dropdown__input_hidden" type="text" name="lang" value="По популярности">
+                                                </div>
+                            </div>
+                            <div class="product__content"> 
+                                          <div class="product__item"> 
+                                            <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
+                                              <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
+                                                <div class="product__rows">
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сезон</p>
+                                                    <p class="product__p">10 декабря - 25 апреля</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Высота на уронем моря</p>
+                                                    <p class="product__p">3 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Общая длина трасс</p>
+                                                    <p class="product__p">13 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сложность трасс</p>
+                                                    <div class="product__circles">
+                                                      <div class="product__circle product__circle_black"> </div>
+                                                      <div class="product__circle product__circle_red"> </div>
+                                                      <div class="product__circle product__circle_green"> </div>
+                                                      <div class="product__circle product__circle_blue"> </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Подъемники</p>
+                                                    <p class="product__p">5 шт</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Отзывы</p>
+                                                    <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
+                                                  </div>
+                                                </div>
+                                              </p>
+                                            </div>
+                                            <div class="product__right"> 
+                                              <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                                              <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
+                                              <div class="product__buttons">  
+                                                <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="product__item"> 
+                                            <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
+                                              <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
+                                                <div class="product__rows">
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сезон</p>
+                                                    <p class="product__p">10 декабря - 25 апреля</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Высота на уронем моря</p>
+                                                    <p class="product__p">3 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Общая длина трасс</p>
+                                                    <p class="product__p">13 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сложность трасс</p>
+                                                    <div class="product__circles">
+                                                      <div class="product__circle product__circle_black"> </div>
+                                                      <div class="product__circle product__circle_red"> </div>
+                                                      <div class="product__circle product__circle_green"> </div>
+                                                      <div class="product__circle product__circle_blue"> </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Подъемники</p>
+                                                    <p class="product__p">5 шт</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Отзывы</p>
+                                                    <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
+                                                  </div>
+                                                </div>
+                                              </p>
+                                            </div>
+                                            <div class="product__right"> 
+                                              <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                                              <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
+                                              <div class="product__buttons">  
+                                                <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="product__item"> 
+                                            <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
+                                              <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
+                                                <div class="product__rows">
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сезон</p>
+                                                    <p class="product__p">10 декабря - 25 апреля</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Высота на уронем моря</p>
+                                                    <p class="product__p">3 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Общая длина трасс</p>
+                                                    <p class="product__p">13 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сложность трасс</p>
+                                                    <div class="product__circles">
+                                                      <div class="product__circle product__circle_black"> </div>
+                                                      <div class="product__circle product__circle_red"> </div>
+                                                      <div class="product__circle product__circle_green"> </div>
+                                                      <div class="product__circle product__circle_blue"> </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Подъемники</p>
+                                                    <p class="product__p">5 шт</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Отзывы</p>
+                                                    <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
+                                                  </div>
+                                                </div>
+                                              </p>
+                                            </div>
+                                            <div class="product__right"> 
+                                              <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                                              <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
+                                              <div class="product__buttons">  
+                                                <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="product__item"> 
+                                            <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
+                                              <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
+                                                <div class="product__rows">
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сезон</p>
+                                                    <p class="product__p">10 декабря - 25 апреля</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Высота на уронем моря</p>
+                                                    <p class="product__p">3 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Общая длина трасс</p>
+                                                    <p class="product__p">13 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сложность трасс</p>
+                                                    <div class="product__circles">
+                                                      <div class="product__circle product__circle_black"> </div>
+                                                      <div class="product__circle product__circle_red"> </div>
+                                                      <div class="product__circle product__circle_green"> </div>
+                                                      <div class="product__circle product__circle_blue"> </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Подъемники</p>
+                                                    <p class="product__p">5 шт</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Отзывы</p>
+                                                    <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
+                                                  </div>
+                                                </div>
+                                              </p>
+                                            </div>
+                                            <div class="product__right"> 
+                                              <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                                              <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
+                                              <div class="product__buttons">  
+                                                <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="product__item"> 
+                                            <div class="product__left"> <a class="product__subtitle" href="#!">Роза хутор</a>
+                                              <p class="product__p product__desc">Россия, Карачаево-Черкесия, п. Домбай
+                                                <div class="product__rows">
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сезон</p>
+                                                    <p class="product__p">10 декабря - 25 апреля</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Высота на уронем моря</p>
+                                                    <p class="product__p">3 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Общая длина трасс</p>
+                                                    <p class="product__p">13 255 м</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Сложность трасс</p>
+                                                    <div class="product__circles">
+                                                      <div class="product__circle product__circle_black"> </div>
+                                                      <div class="product__circle product__circle_red"> </div>
+                                                      <div class="product__circle product__circle_green"> </div>
+                                                      <div class="product__circle product__circle_blue"> </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Подъемники</p>
+                                                    <p class="product__p">5 шт</p>
+                                                  </div>
+                                                  <div class="product__row"> 
+                                                    <p class="product__p">Отзывы</p>
+                                                    <p class="product__p">1256 отзывов (<a class="product__a" href="reviews.html">читать отзывы</a>) </p>
+                                                  </div>
+                                                </div>
+                                              </p>
+                                            </div>
+                                            <div class="product__right"> 
+                                              <div class="product__img"> <picture><source srcset="img/cards-img.webp" type="image/webp"><img src="img/cards-img.png" alt="" draggable="false" loading="lazy"></picture></div>
+                                              <div class="product__abs"> <a class="product__weather" href="#!"><img src="img/icon-weather.svg" alt="" draggable="false" loading="lazy"><span>+12 C</span></a><a class="product__rating" href="#!"> <img src="img/card-star.svg" alt="" draggable="false" loading="lazy"><span>4.9 (125 отзывов)</span></a></div>
+                                              <div class="product__buttons">  
+                                                <button class="product__btn favorite__btn" type="button">Избранное  <img class="product__icon" src="img/love-icon.svg" alt="" draggable="false" loading="lazy"><img class="product__heart" src="img/icon-heart-white.svg" alt=""></button><a class="product__btn" href="#!">Посмотреть <img src="img/right-arrow.svg" alt="" draggable="false" loading="lazy"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                            </div>
+                                            <div class="pagination"> 
+                                              <div class="pagination__body container"> <a class="pagination__item" href="#!">
+                                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.362 16.9999C13.0898 16.9989 12.8298 16.887 12.642 16.6899L8.78195 12.6899H8.78195C8.40081 12.3011 8.40081 11.6788 8.78195 11.2899L12.782 7.28994C13.1741 6.89782 13.8098 6.89782 14.202 7.28994C14.5941 7.68206 14.5941 8.31782 14.202 8.70994L10.902 11.9999L14.082 15.2999C14.4697 15.69 14.4697 16.3199 14.082 16.7099C13.8908 16.8996 13.6312 17.0042 13.362 16.9999Z" fill="#9CA3AF"/>
+</svg></a><a class="pagination__item active" href="#!">1</a><a class="pagination__item" href="#!">2</a><a class="pagination__item" href="#!">...</a><a class="pagination__item" href="#!">5</a><a class="pagination__item" href="#!">
+                                                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5019 16.9999C10.2361 17.0015 9.98061 16.8971 9.79189 16.7099C9.39977 16.321 9.39717 15.6878 9.78609 15.2957C9.78802 15.2938 9.78995 15.2919 9.79189 15.2899L13.1019 11.9999L9.92189 8.68993V8.68993C9.53417 8.29989 9.53417 7.66997 9.92189 7.27993L9.92189 7.27993C10.3108 6.88781 10.944 6.88521 11.3361 7.27413C11.338 7.27606 11.34 7.27799 11.3419 7.27993L15.2019 11.2799H15.2019C15.583 11.6688 15.583 12.2911 15.2019 12.6799L11.2019 16.6799C11.0206 16.8757 10.7686 16.9909 10.5019 16.9999L10.5019 16.9999Z" fill="#9CA3AF"/>
+</svg></a></div>
+                                            </div>
+                          </div>
+                        </div>
+          </div>
+        </div>
+      </main>
                   <div class="offer"> 
                     <form class="offer__body container" action="#!"> 
                       <p class="offer__title">Хочешь получать самые свежие новости о горнолыжных курортах и секретные лайфхаки? Подпишись!</p>
@@ -376,7 +546,7 @@
               </div>
             </footer>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220323113226"> </script>
-    <script src="js/app.js?_v=20220323113226"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?_v=20220323173448"> </script>
+    <script src="js/app.js?_v=20220323173448"> </script>
   </body>
 </html>
