@@ -34,6 +34,27 @@ mixin header-home()
                     span.header__button-line 
 
 
+mixin header-admin()
+    header.header
+        nav.header__nav 
+            .container.header__inner 
+                a(href="#!").header__logo
+                    img(src="@img/logo-blue-squeare.svg", alt="" draggable="false")
+                    .header__logo-info 
+                        span.header__logo-title Domainf.com
+                        span.header__logo-p Все горнолыжные курорты мира в одном месте
+                .header__menu
+                    ul.header__list.admin__header-list
+                        li.header__li 
+                            a(href="admin.html").header__link Страницы курортов
+                        li.header__li 
+                            a(href="editor.html").header__link Редактору
+                        li.header__li 
+                            a(href="requests.html").header__link Заявки
+                button(title="menu").header__button 
+                    span.header__button-line 
+
+
 mixin header()
     header.header
         nav.header__nav 

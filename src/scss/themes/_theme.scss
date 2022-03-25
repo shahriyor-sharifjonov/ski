@@ -539,3 +539,17 @@ a{
         }
     }
 }
+
+.disabled{ 
+    input{
+        border-color: #9CA3AF;
+        &:checked{
+            &::before{
+                background: url('../img/checked-disabled.svg') center/100% 100% no-repeat;
+            }
+        }
+    }
+    label{
+        color: #9CA3AF;
+    }
+}

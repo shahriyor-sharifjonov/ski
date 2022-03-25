@@ -44,7 +44,19 @@
             max-width: 300px !important;
             width: 100% !important;
         }
+        &2{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            column-gap: 47px;
+        }
     } 
+    &__col{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 4px;
+    }
     &__p{
         font-weight: 500;
         font-size: 18px;
