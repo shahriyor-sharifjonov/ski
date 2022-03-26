@@ -5822,7 +5822,7 @@ span.flatpickr-weekday {
 }
 
 .resort__slider-upload {
-  float: right;
+  margin-left: auto;
   position: relative;
   width: 176px;
   height: 32px;
@@ -7122,12 +7122,140 @@ a {
   margin-bottom: 0;
 }
 
+.editor .types {
+  padding: 80px 0;
+}
+
 .editor .types__info {
   margin-top: 17px;
 }
 
 .editor .types .resort__slider-upload {
   margin-top: 0px;
+}
+
+.editor__track {
+  padding-bottom: 50px;
+}
+
+.editor__track-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 126px;
+     -moz-column-gap: 126px;
+          column-gap: 126px;
+}
+
+.editor__track-title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  margin-bottom: 26px;
+  text-transform: uppercase;
+  color: #1F2937;
+}
+
+.editor__track-title.mb {
+  margin-bottom: 84px;
+}
+
+.editor__track-warning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
+  margin-bottom: 36px;
+}
+
+.editor__track-warning span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #374151;
+}
+
+.editor__track .resort__slider-upload {
+  margin-top: 0;
+  margin-bottom: 42px;
+  margin-left: 0;
+}
+
+.editor__track-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+  -webkit-column-gap: 38px;
+     -moz-column-gap: 38px;
+          column-gap: 38px;
+}
+
+.editor__track-row .editor__changer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.editor__track-btn {
+  background: #2563EB;
+  width: 176px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.editor__track-btn:hover {
+  background: var(--primary-hover);
+}
+
+.editor__track-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.editor__track-content .videos__item {
+  max-width: calc(33.3333333333% - 26.6666666667px);
+  width: calc(33.3333333333% - 26.6666666667px);
 }
 
 @media (min-width: 576px) {
@@ -7439,6 +7567,25 @@ a {
   .katalog__sidebar {
     max-width: 100%;
     width: 488px;
+  }
+
+  .editor__track-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 50px;
+  }
+
+  .editor__track-col {
+    width: 100%;
+  }
+
+  .editor__track-title.mb {
+    margin-bottom: 30px;
   }
 }
 
@@ -8546,6 +8693,30 @@ a {
 
   .editor .acc {
     padding: 40px 0;
+  }
+
+  .editor .types {
+    padding: 30px 0;
+  }
+
+  .editor__track {
+    padding-bottom: 30px;
+  }
+
+  .editor__track-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+
+  .editor__track-content .videos__item {
+    max-width: calc(50% - 20px);
+    width: calc(50% - 20px);
   }
 }
 
